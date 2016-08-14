@@ -56,15 +56,47 @@
 		D86E0FF41D6122C3007C6849 /* SECOMP */ = {
 			isa = PBXGroup;
 			children = (
-				D86E0FF51D6122C3007C6849 /* AppDelegate.swift */,
-				D86E0FF71D6122C3007C6849 /* ViewController.swift */,
-				D86E0FF91D6122C3007C6849 /* Main.storyboard */,
-				D86E0FFF1D6122C3007C6849 /* Assets.xcassets */,
-				D86E10011D6122C3007C6849 /* LaunchScreen.storyboard */,
-				D86E10041D6122C3007C6849 /* Info.plist */,
-				D86E0FFC1D6122C3007C6849 /* SECOMP.xcdatamodeld */,
+				D86E100E1D61235B007C6849 /* Controller */,
+				D86E100D1D612341007C6849 /* View */,
+				D86E100C1D612336007C6849 /* Model */,
+				D86E100B1D612320007C6849 /* supportFiles */,
 			);
 			path = SECOMP;
+			sourceTree = "<group>";
+		};
+		D86E100B1D612320007C6849 /* supportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D86E0FF51D6122C3007C6849 /* AppDelegate.swift */,
+				D86E0FFF1D6122C3007C6849 /* Assets.xcassets */,
+				D86E10041D6122C3007C6849 /* Info.plist */,
+			);
+			name = supportFiles;
+			sourceTree = "<group>";
+		};
+		D86E100C1D612336007C6849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D86E0FFC1D6122C3007C6849 /* SECOMP.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D86E100D1D612341007C6849 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D86E0FF91D6122C3007C6849 /* Main.storyboard */,
+				D86E10011D6122C3007C6849 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D86E100E1D61235B007C6849 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D86E0FF71D6122C3007C6849 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
