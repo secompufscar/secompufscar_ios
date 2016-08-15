@@ -13,6 +13,11 @@
 		D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86E0FFC1D6122C3007C6849 /* SECOMP.xcdatamodeld */; };
 		D86E10001D6122C3007C6849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86E0FFF1D6122C3007C6849 /* Assets.xcassets */; };
 		D86E10031D6122C3007C6849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86E10011D6122C3007C6849 /* LaunchScreen.storyboard */; };
+		D86E10141D613414007C6849 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86E10101D613414007C6849 /* Fabric.framework */; };
+		D86E10151D613414007C6849 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86E10111D613414007C6849 /* TwitterKit.framework */; };
+		D86E10161D613414007C6849 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D86E10121D613414007C6849 /* TwitterKitResources.bundle */; };
+		D86E10171D613414007C6849 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86E10131D613414007C6849 /* TwitterCore.framework */; };
+		D86E101A1D61360C007C6849 /* TwitterTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E10191D61360C007C6849 /* TwitterTimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		D86E0FFF1D6122C3007C6849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86E10021D6122C3007C6849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D86E10041D6122C3007C6849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86E10101D613414007C6849 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		D86E10111D613414007C6849 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		D86E10121D613414007C6849 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		D86E10131D613414007C6849 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		D86E10191D61360C007C6849 /* TwitterTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterTimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86E10141D613414007C6849 /* Fabric.framework in Frameworks */,
+				D86E10171D613414007C6849 /* TwitterCore.framework in Frameworks */,
+				D86E10151D613414007C6849 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +69,7 @@
 		D86E0FF41D6122C3007C6849 /* SECOMP */ = {
 			isa = PBXGroup;
 			children = (
+				D86E10181D6134FC007C6849 /* FabricApi */,
 				D86E100E1D61235B007C6849 /* Controller */,
 				D86E100D1D612341007C6849 /* View */,
 				D86E100C1D612336007C6849 /* Model */,
@@ -95,8 +109,20 @@
 			isa = PBXGroup;
 			children = (
 				D86E0FF71D6122C3007C6849 /* ViewController.swift */,
+				D86E10191D61360C007C6849 /* TwitterTimelineViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D86E10181D6134FC007C6849 /* FabricApi */ = {
+			isa = PBXGroup;
+			children = (
+				D86E10101D613414007C6849 /* Fabric.framework */,
+				D86E10111D613414007C6849 /* TwitterKit.framework */,
+				D86E10121D613414007C6849 /* TwitterKitResources.bundle */,
+				D86E10131D613414007C6849 /* TwitterCore.framework */,
+			);
+			name = FabricApi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +135,7 @@
 				D86E0FEE1D6122C3007C6849 /* Sources */,
 				D86E0FEF1D6122C3007C6849 /* Frameworks */,
 				D86E0FF01D6122C3007C6849 /* Resources */,
+				D86E100F1D6133A4007C6849 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86E10161D613414007C6849 /* TwitterKitResources.bundle in Resources */,
 				D86E10031D6122C3007C6849 /* LaunchScreen.storyboard in Resources */,
 				D86E10001D6122C3007C6849 /* Assets.xcassets in Resources */,
 				D86E0FFB1D6122C3007C6849 /* Main.storyboard in Resources */,
@@ -164,6 +192,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D86E100F1D6133A4007C6849 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 8ca5961d86c2f73d3d8edb92e3d42e2d310a9bfb 4c48d9db1b6193191b20d2a1d4997913b91565bff82a75688ff7ebf25bd9e415";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D86E0FEE1D6122C3007C6849 /* Sources */ = {
@@ -173,6 +217,7 @@
 				D86E0FF81D6122C3007C6849 /* ViewController.swift in Sources */,
 				D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */,
 				D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */,
+				D86E101A1D61360C007C6849 /* TwitterTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +332,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SECOMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar.SECOMP;
@@ -298,6 +347,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SECOMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar.SECOMP;
@@ -324,6 +377,7 @@
 				D86E10091D6122C3007C6849 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
