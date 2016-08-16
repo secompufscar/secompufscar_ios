@@ -28,6 +28,7 @@ class EventoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         label.text = viasegue.nome_atividade
         
         nomePalestrante.text = viasegue.ministrante_atividade

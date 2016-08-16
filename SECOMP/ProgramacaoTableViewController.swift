@@ -63,21 +63,6 @@ class ProgramacaoTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        vect = ["Teste1", "Teste2"]
-        
-        /*let fileURL = NSURL(string: "https://secompufscar.com.br/static/secompufscar2016/sitemapl.txt")
-        
-        do {
-            let dataFromFile = try String(contentsOfURL: fileURL!, encoding: NSUTF8StringEncoding)
-            //            let data = NSData(contentsOfURL: fileURL!)
-            //            let weatherData = NSData(contentsOfURL: fileURL!, options: nil, error: nil)
-            //            label.text = data?.description
-            //            print(dataFromFile)
-            //label.text = data
-        } catch let error as NSError {
-            print("Error")
-            print(error)
-        }*/
         
         
         let requestURL: NSURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
