@@ -9,6 +9,8 @@
 import UIKit
 
 class SobreTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var Informacao: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
