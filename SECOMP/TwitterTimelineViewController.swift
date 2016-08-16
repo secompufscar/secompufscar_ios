@@ -16,8 +16,8 @@ class TwitterTimelineViewController: TWTRTimelineViewController {
         super.viewDidLoad()
         
         let client = TWTRAPIClient()
-        //self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#secompufscar", APIClient: client)
-        self.dataSource = TWTRUserTimelineDataSource(screenName: "secompufscar", APIClient: client)
+        self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#secompufscar", APIClient: client)
+        //self.dataSource = TWTRUserTimelineDataSource(screenName: "secompufscar", APIClient: client)
     }
 
     override func didReceiveMemoryWarning() {

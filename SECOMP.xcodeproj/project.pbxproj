@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */; };
 		D846CB211D62228300532BEF /* ProgramacaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */; };
 		D846CB231D6222BB00532BEF /* ProgramacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */; };
 		D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB251D622CBB00532BEF /* FavoritosTableViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
 		D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramacaoTableViewController.swift; sourceTree = "<group>"; };
 		D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramacaoTableViewCell.swift; sourceTree = "<group>"; };
 		D846CB251D622CBB00532BEF /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		D86E100E1D61235B007C6849 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */,
 				D846CB301D622E0800532BEF /* Home */,
 				D846CB241D6222CC00532BEF /* Programaçao */,
 				D846CB2F1D622DBD00532BEF /* Twitter */,
@@ -281,6 +284,7 @@
 			files = (
 				D846CB231D6222BB00532BEF /* ProgramacaoTableViewCell.swift in Sources */,
 				D846CB2C1D622D9300532BEF /* SobreTableViewController.swift in Sources */,
+				3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */,
 				D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */,
 				D846CB321D623B0F00532BEF /* EventoViewController.swift in Sources */,
 				D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */,
