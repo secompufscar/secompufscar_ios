@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     }
     
     
-    @IBAction func createNot(sender: AnyObject) {
+    @IBAction func createNotificationTest(sender: AnyObject) {
         sendNotification()
     }
     

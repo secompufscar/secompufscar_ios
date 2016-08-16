@@ -46,7 +46,7 @@
                                 <rect key="frame" x="153" y="87" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="createNot:" destination="OzQ-2h-t3R" eventType="touchUpInside" id="2Ai-Pu-Smg"/>
+                                    <action selector="createNotificationTest:" destination="OzQ-2h-t3R" eventType="touchUpInside" id="lio-45-Bzb"/>
                                 </connections>
                             </button>
                         </subviews>

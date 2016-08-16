@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    // O que fazer quando uma notificação for recebida
+    // Zera a quantidade de vista no Badge do app quando a notificacao é recebida
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         application.applicationIconBadgeNumber = 0
     }
@@ -52,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        // Zera a quantidade de vista no Badge do app quando o app é aberto
+        application.applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(application: UIApplication) {

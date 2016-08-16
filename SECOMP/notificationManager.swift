@@ -12,9 +12,13 @@ import UIKit
 func sendNotification() {
     
     let localNotification = UILocalNotification()
+    
     localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
     localNotification.alertBody = "Teste Notificacao SECOMP"
     localNotification.timeZone = NSTimeZone.defaultTimeZone()
+    //localNotification.alertAction = "Acao 1"
+    localNotification.soundName = UILocalNotificationDefaultSoundName
+    
     localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
     
     UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
