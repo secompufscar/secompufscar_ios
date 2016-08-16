@@ -80,7 +80,7 @@ class ProgramacaoTableViewController: UITableViewController {
         }*/
         
         
-        let requestURL: NSURL = NSURL(string: "http://localhost:8000/2016/app/")!
+        let requestURL: NSURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -166,6 +166,7 @@ class ProgramacaoTableViewController: UITableViewController {
         
         cell.label.text = vect[indexPath.row].nome_atividade
         
+        
 
         return cell
     }
@@ -215,7 +216,7 @@ class ProgramacaoTableViewController: UITableViewController {
         if segue.identifier == "showDetail"{
             if let destination = segue.destinationViewController as? EventoViewController {
                 let path = tableView.indexPathForSelectedRow?.row
-//                destination.viasegue = vect[path!]
+                destination.viasegue = vect[path!]
             }
         }
     }
