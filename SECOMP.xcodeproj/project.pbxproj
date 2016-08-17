@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */; };
+		3F9964931D64F2E70000D4AC /* SobreDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */; };
+		3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */; };
+		3F9964951D64F2E70000D4AC /* SobresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964911D64F2E70000D4AC /* SobresViewController.swift */; };
+		3F9964961D64F2E70000D4AC /* SobreUFSCARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964921D64F2E70000D4AC /* SobreUFSCARViewController.swift */; };
 		D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */; };
 		D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */; };
 		D83FA4CB1D63DD29006EC8D1 /* AtividadeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */; };
@@ -33,6 +37,10 @@
 
 /* Begin PBXFileReference section */
 		3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
+		3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDCViewController.swift; sourceTree = "<group>"; };
+		3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDevViewController.swift; sourceTree = "<group>"; };
+		3F9964911D64F2E70000D4AC /* SobresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobresViewController.swift; sourceTree = "<group>"; };
+		3F9964921D64F2E70000D4AC /* SobreUFSCARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreUFSCARViewController.swift; sourceTree = "<group>"; };
 		D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Atividade+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
 		D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeDAO.swift; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 		D846CB2A1D622D6700532BEF /* Sobre */ = {
 			isa = PBXGroup;
 			children = (
+				3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */,
+				3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */,
+				3F9964911D64F2E70000D4AC /* SobresViewController.swift */,
+				3F9964921D64F2E70000D4AC /* SobreUFSCARViewController.swift */,
 				D846CB2B1D622D9300532BEF /* SobreTableViewController.swift */,
 				D846CB2D1D622DAF00532BEF /* SobreTableViewCell.swift */,
 			);
@@ -303,12 +315,16 @@
 				D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */,
 				D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */,
 				D846CB321D623B0F00532BEF /* EventoViewController.swift in Sources */,
+				3F9964931D64F2E70000D4AC /* SobreDCViewController.swift in Sources */,
 				D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */,
 				D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */,
 				D846CB211D62228300532BEF /* ProgramacaoTableViewController.swift in Sources */,
+				3F9964961D64F2E70000D4AC /* SobreUFSCARViewController.swift in Sources */,
 				D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */,
+				3F9964951D64F2E70000D4AC /* SobresViewController.swift in Sources */,
 				D846CB361D6264AD00532BEF /* HomeViewController.swift in Sources */,
 				D86E101A1D61360C007C6849 /* TwitterTimelineViewController.swift in Sources */,
+				3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */,
 				D846CB291D622CE600532BEF /* FavoritosTableViewCell.swift in Sources */,
 				D846CB2E1D622DAF00532BEF /* SobreTableViewCell.swift in Sources */,
 			);
