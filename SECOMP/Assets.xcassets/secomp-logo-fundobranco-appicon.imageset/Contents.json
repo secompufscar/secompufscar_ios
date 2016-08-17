@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "logo-icone-cor-no-branco-sem-fundo.png",
+      "filename" : "secomp-logo-fundobranco-appicon-1.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "secomp-logo-fundobranco-appicon.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "secomp-logo-fundobranco-appicon-2.jpg",
       "scale" : "3x"
     }
   ],

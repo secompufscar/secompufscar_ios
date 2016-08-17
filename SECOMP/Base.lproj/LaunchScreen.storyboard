@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="AjI-Dm-zZF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="AjI-Dm-zZF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-icone-cor-no-branco-sem-fundo" translatesAutoresizingMaskIntoConstraints="NO" id="sfG-PB-6Jq">
-                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-cU-QEs">
+                                <rect key="frame" x="230" y="230" width="140" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="EWQ-nM-h0c"/>
-                                    <constraint firstAttribute="width" secondItem="sfG-PB-6Jq" secondAttribute="height" multiplier="1:1" id="bGj-L8-Kz7"/>
+                                    <constraint firstAttribute="width" constant="140" id="JTK-hI-P6x"/>
+                                    <constraint firstAttribute="height" constant="140" id="LTg-sF-Dj9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sfG-PB-6Jq" firstAttribute="centerY" secondItem="xIc-ue-nJL" secondAttribute="centerY" id="atl-ZQ-oDQ"/>
-                            <constraint firstItem="sfG-PB-6Jq" firstAttribute="centerX" secondItem="xIc-ue-nJL" secondAttribute="centerX" id="oRA-gQ-N3z"/>
+                            <constraint firstItem="INQ-cU-QEs" firstAttribute="centerX" secondItem="xIc-ue-nJL" secondAttribute="centerX" id="tVP-zk-LzK"/>
+                            <constraint firstItem="INQ-cU-QEs" firstAttribute="centerY" secondItem="xIc-ue-nJL" secondAttribute="centerY" id="yUS-uj-LB4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -39,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-icone-cor-no-branco-sem-fundo" width="516" height="446"/>
+        <image name="secomp-logo-fundobranco-appicon" width="1024" height="1024"/>
     </resources>
 </document>
