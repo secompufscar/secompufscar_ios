@@ -388,7 +388,7 @@
                                         <variation key="widthClass=compact" constant="325"/>
                                     </constraint>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -403,7 +403,7 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Qw-btM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Qw-btM">
                                 <rect key="frame" x="150" y="104" width="414" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Andre Carlos Ponce de Leon Ferreira de Carvalho">
@@ -533,7 +533,7 @@
         <!--Sobre a SECOMP-->
         <scene sceneID="9w6-IT-rEr">
             <objects>
-                <viewController title="Sobre a SECOMP" id="PUC-Hd-Mg3" customClass="ViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sobre a SECOMP" id="PUC-Hd-Mg3" customClass="SobresViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dig-rS-Nwe"/>
                         <viewControllerLayoutGuide type="bottom" id="ZZ8-Nv-YJB"/>
@@ -545,7 +545,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vi_secomp" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-ap-wZN">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-V9-1Qb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-V9-1Qb">
                                 <rect key="frame" x="20" y="263" width="560" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">A Semana Acadêmica da Computação da Universidade Federal de São Carlos surgiu da necessidade de se trazer assuntos que fossem de interesse tanto da comunidade acadêmica quanto de entusiastas. Nela, pessoas de diferentes áreas são convidadas a apresentar, discutir e debater experiências e novidades que trarão informação, conhecimento e inovação aos participantes.
@@ -557,6 +557,12 @@ Em prol disso, os estudos são constantes para que o modelo de evento sempre mel
 Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melhorias, por entendermos que você, participante, é a peça fundamental para a nossa evolução!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="range" keyPath="scrollRangeToVisible">
+                                        <range key="value" location="0" length="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -573,6 +579,9 @@ Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melho
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre a SECOMP" id="uCR-0c-bM2"/>
+                    <connections>
+                        <outlet property="aboutSECOMP" destination="t6x-V9-1Qb" id="H9e-eh-sZ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjN-cX-wd5" sceneMemberID="firstResponder"/>
             </objects>
@@ -581,7 +590,7 @@ Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melho
         <!--Sobre o DC-->
         <scene sceneID="Hq6-Lg-OAR">
             <objects>
-                <viewController title="Sobre o DC" id="9Tu-gd-IZE" customClass="ViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sobre o DC" id="9Tu-gd-IZE" customClass="SobreDCViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IwE-54-rEZ"/>
                         <viewControllerLayoutGuide type="bottom" id="8eF-gy-cMi"/>
@@ -593,17 +602,18 @@ Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melho
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fachada_dc_ufscar" translatesAutoresizingMaskIntoConstraints="NO" id="VxM-7g-L9X">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nld-gc-9Dm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nld-gc-9Dm">
                                 <rect key="frame" x="20" y="258" width="560" height="285"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">O Departamento de Computação existe desde 1972, sendo responsável por habilitar e colocar com excelência anualmente no mercado de trabalho cerca de uma centena de profissionais, que atuam em empresas e em Instituições de Ensino Superior.
+                                <string key="text">O Departamento de Computação existe desde 1972, sendo responsável por habilitar e colocar com excelência anualmente no mercado de trabalho cerca de uma centena de profissionais, que atuam em empresas e em Instituições de Ensino Superior.
 
 Atento à constante evolução na área de computação, o DC-UFSCar tem atuado na vanguarda do desenvolvimento tecnológico, firmando-se no cenário nacional e internacional como um centro de pesquisa bastante atuante.
 
 Texto obtido da página institucional do Departamento de Computação da UFSCar, disponível em www.dc.ufscar.br.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -620,6 +630,9 @@ Texto obtido da página institucional do Departamento de Computação da UFSCar,
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre o DC" id="cPR-tb-XeF"/>
+                    <connections>
+                        <outlet property="AboutDC" destination="nld-gc-9Dm" id="V4F-2s-LSN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8C-rz-qjl" sceneMemberID="firstResponder"/>
             </objects>
@@ -628,7 +641,7 @@ Texto obtido da página institucional do Departamento de Computação da UFSCar,
         <!--Sobre a UFSCar-->
         <scene sceneID="dIq-hc-wS4">
             <objects>
-                <viewController title="Sobre a UFSCar" id="R4A-nt-DFb" customClass="ViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sobre a UFSCar" id="R4A-nt-DFb" customClass="SobreUFSCARViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J3s-5r-wfx"/>
                         <viewControllerLayoutGuide type="bottom" id="zy3-w4-N32"/>
@@ -640,10 +653,10 @@ Texto obtido da página institucional do Departamento de Computação da UFSCar,
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufscar_aerea" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Wu-Y9M">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-AW-gpQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-AW-gpQ">
                                 <rect key="frame" x="14" y="263" width="566" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Fundada em 1968, a Universidade Federal de São Carlos (UFSCar), única instituição federal de Ensino Superior localizada no interior do Estado de São Paulo, destaca-se pelo alto nível de qualificação de seu corpo docente: 96,1% são doutores ou mestres. Em sua maioria, 98,6% dos professores desenvolvem atividades de ensino, pesquisa e extensão em regime de dedicação exclusiva.
+                                <string key="text">Fundada em 1968, a Universidade Federal de São Carlos (UFSCar), única instituição federal de Ensino Superior localizada no interior do Estado de São Paulo, destaca-se pelo alto nível de qualificação de seu corpo docente: 96,1% são doutores ou mestres. Em sua maioria, 98,6% dos professores desenvolvem atividades de ensino, pesquisa e extensão em regime de dedicação exclusiva.
 
 A Universidade possui quatro campi, sendo que o principal fica em São Carlos, município localizado a 235 km da capital do Estado, e tem 645 hectares de extensão, sendo 196 mil m² de área construída.
 
@@ -653,9 +666,10 @@ Os 48 departamentos acadêmicos da Universidade estão divididos em oito centros
 
 A UFSCar oferece 62 cursos e um total de 2.807 novas vagas na graduação presencial. São 39 opções de cursos em São Carlos (1.797 vagas), seis em Araras (240 vagas), 14 em Sorocaba (620) e três em Buri (150 vagas).
 
-Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</mutableString>
+Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -672,6 +686,9 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre a UFSCar" id="nb3-Ve-3r4"/>
+                    <connections>
+                        <outlet property="AboutUFSCAR" destination="fbg-AW-gpQ" id="zGY-xU-JMN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAu-YZ-69W" sceneMemberID="firstResponder"/>
             </objects>
@@ -680,7 +697,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
         <!--Desenvolvedores-->
         <scene sceneID="3Qc-Pa-Hw1">
             <objects>
-                <viewController title="Desenvolvedores" id="dg9-j7-jnV" customClass="ViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Desenvolvedores" id="dg9-j7-jnV" customClass="SobreDevViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DjY-X5-xo3"/>
                         <viewControllerLayoutGuide type="bottom" id="5cj-Sa-jmR"/>
@@ -712,6 +729,7 @@ Marcelo de Oliveira</string>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -728,6 +746,9 @@ Marcelo de Oliveira</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Desenvolvedores" id="P4f-uP-D95"/>
+                    <connections>
+                        <outlet property="aboutDev" destination="ywt-qH-dgh" id="UxW-ZY-AmJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ct2-a8-D0B" sceneMemberID="firstResponder"/>
             </objects>
