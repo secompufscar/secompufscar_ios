@@ -563,7 +563,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vi_secomp" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-ap-wZN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vi_secomp" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-ap-wZN">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-V9-1Qb">
@@ -620,7 +620,7 @@ Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melho
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fachada_dc_ufscar" translatesAutoresizingMaskIntoConstraints="NO" id="VxM-7g-L9X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fachada_dc_ufscar" translatesAutoresizingMaskIntoConstraints="NO" id="VxM-7g-L9X">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nld-gc-9Dm">
@@ -671,7 +671,7 @@ Texto obtido da página institucional do Departamento de Computação da UFSCar,
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufscar_aerea" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Wu-Y9M">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufscar_aerea" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Wu-Y9M">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-AW-gpQ">
@@ -727,7 +727,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portal" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-gM-5E4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portal" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-gM-5E4">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-qH-dgh">
