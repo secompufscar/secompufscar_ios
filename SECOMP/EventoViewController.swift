@@ -43,6 +43,7 @@ class EventoViewController: UIViewController {
         
         nomePalestrante.text = viasegue.ministrante_atividade
         
+        
 //        let date = viasegue.data_inicio_atividade
 //        let calendar = NSCalendar.currentCalendar()
 //        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
@@ -56,6 +57,7 @@ class EventoViewController: UIViewController {
         labelHora.text = viasegue.data_inicio_atividade + " - " + viasegue.hora_inicio_atividade
         
         textDescricao.text = viasegue.descricao_atividade
+        textDescricao.scrollRangeToVisible(NSMakeRange(0, 0))
     
         
         imagePalestrante.layer.borderWidth = 1.75
