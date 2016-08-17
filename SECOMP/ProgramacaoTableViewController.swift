@@ -37,6 +37,7 @@ class AtividadeAux {
 class ProgramacaoTableViewController: UITableViewController {
     
     var palestras = [AtividadeAux]()
+    var imagens = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,10 +73,15 @@ class ProgramacaoTableViewController: UITableViewController {
                           
                             self.palestras.append(
                                 AtividadeAux(nome_atividade: palestra["nome_atividade"]!, descricao_atividade: palestra["descricao_atividade"]!, data_inicio_atividade: palestra["data_inicio_atividade"]!, hora_inicio_atividade: palestra["hora_inicio_atividade"]!, hora_fim_atividade: palestra["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: palestra["local_atividade"]!, ministrante_atividade: palestra["ministrante_atividade"]!, foto_atividade: palestra["foto_atividade"]!))
+
                         }
                         
                         dispatch_async(dispatch_get_main_queue(), {
                             self.tableView.reloadData()
+                            
+                            for _ in palestras {
+                                self.imagens.append(UIImage())
+                            }
                         });
                     }
                 } catch {
@@ -111,17 +117,24 @@ class ProgramacaoTableViewController: UITableViewController {
         
         cell.label.text = palestras[indexPath.row].nome_atividade
         cell.horarioLabel.text = palestras[indexPath.row].data_inicio_atividade + " " + palestras[indexPath.row].hora_inicio_atividade
+//        cell.imagemMinistrante.image = imagens[indexPath.row]
+        
+        
         
         let url = NSURL(string: palestras[indexPath.row].foto_atividade)
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
             dispatch_async(dispatch_get_main_queue(), {
-                cell.imagemMinistrante.image = UIImage(data: data!)
-                cell.imagemMinistrante.layer.borderWidth = 0.75
-                cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
-                cell.imagemMinistrante.layer.cornerRadius = 5
-                cell.imagemMinistrante.clipsToBounds = true
+                self.imagens[indexPath.row] = UIImage(data: data!)!
+                cell.imagemMinistrante.image = self.imagens[indexPath.row]
+                
+                
+//                cell.imagemMinistrante.image = UIImage(data: data!)
+//                cell.imagemMinistrante.layer.borderWidth = 0.75
+//                cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
+//                cell.imagemMinistrante.layer.cornerRadius = 5
+//                cell.imagemMinistrante.clipsToBounds = true
             });
         }
 
@@ -174,6 +187,7 @@ class ProgramacaoTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? EventoViewController {
                 let path = tableView.indexPathForSelectedRow?.row
                 destination.viasegue = palestras[path!]
+                destination.imagem = imagens[path!]
             }
         }
     }
