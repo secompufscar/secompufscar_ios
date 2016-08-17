@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */; };
+		D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */; };
+		D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */; };
+		D83FA4CB1D63DD29006EC8D1 /* AtividadeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */; };
 		D846CB211D62228300532BEF /* ProgramacaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */; };
 		D846CB231D6222BB00532BEF /* ProgramacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */; };
 		D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB251D622CBB00532BEF /* FavoritosTableViewController.swift */; };
@@ -15,7 +18,6 @@
 		D846CB2C1D622D9300532BEF /* SobreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB2B1D622D9300532BEF /* SobreTableViewController.swift */; };
 		D846CB2E1D622DAF00532BEF /* SobreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB2D1D622DAF00532BEF /* SobreTableViewCell.swift */; };
 		D846CB321D623B0F00532BEF /* EventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB311D623B0F00532BEF /* EventoViewController.swift */; };
-		D846CB341D62550300532BEF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D846CB331D62550300532BEF /* data.json */; };
 		D846CB361D6264AD00532BEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB351D6264AD00532BEF /* HomeViewController.swift */; };
 		D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E0FF51D6122C3007C6849 /* AppDelegate.swift */; };
 		D86E0FFB1D6122C3007C6849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86E0FF91D6122C3007C6849 /* Main.storyboard */; };
@@ -31,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
+		D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Atividade+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
+		D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeDAO.swift; sourceTree = "<group>"; };
 		D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramacaoTableViewController.swift; sourceTree = "<group>"; };
 		D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramacaoTableViewCell.swift; sourceTree = "<group>"; };
 		D846CB251D622CBB00532BEF /* FavoritosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosTableViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		D846CB2B1D622D9300532BEF /* SobreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTableViewController.swift; sourceTree = "<group>"; };
 		D846CB2D1D622DAF00532BEF /* SobreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTableViewCell.swift; sourceTree = "<group>"; };
 		D846CB311D623B0F00532BEF /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoViewController.swift; sourceTree = "<group>"; };
-		D846CB331D62550300532BEF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		D846CB351D6264AD00532BEF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D86E0FF21D6122C3007C6849 /* SECOMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SECOMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86E0FF51D6122C3007C6849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D83FA4C51D63DADC006EC8D1 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		D846CB241D6222CC00532BEF /* Programaçao */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +165,9 @@
 		D86E100C1D612336007C6849 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D846CB331D62550300532BEF /* data.json */,
+				D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */,
+				D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */,
+				D83FA4C51D63DADC006EC8D1 /* DAO */,
 				D86E0FFC1D6122C3007C6849 /* SECOMP.xcdatamodeld */,
 			);
 			name = Model;
@@ -255,7 +269,6 @@
 				D86E10161D613414007C6849 /* TwitterKitResources.bundle in Resources */,
 				D86E10031D6122C3007C6849 /* LaunchScreen.storyboard in Resources */,
 				D86E10001D6122C3007C6849 /* Assets.xcassets in Resources */,
-				D846CB341D62550300532BEF /* data.json in Resources */,
 				D86E0FFB1D6122C3007C6849 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,9 +299,12 @@
 				D846CB231D6222BB00532BEF /* ProgramacaoTableViewCell.swift in Sources */,
 				D846CB2C1D622D9300532BEF /* SobreTableViewController.swift in Sources */,
 				3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */,
+				D83FA4CB1D63DD29006EC8D1 /* AtividadeDAO.swift in Sources */,
 				D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */,
+				D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */,
 				D846CB321D623B0F00532BEF /* EventoViewController.swift in Sources */,
 				D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */,
+				D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */,
 				D846CB211D62228300532BEF /* ProgramacaoTableViewController.swift in Sources */,
 				D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */,
 				D846CB361D6264AD00532BEF /* HomeViewController.swift in Sources */,

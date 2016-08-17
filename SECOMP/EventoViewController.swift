@@ -19,7 +19,7 @@ class EventoViewController: UIViewController {
     @IBOutlet weak var textDescricao: UITextView!
     
     
-    var viasegue: Atividade = Atividade (nome_atividade: "", descricao_atividade: "", dia_atividade: "", horario_atividade: "", local_atividade: "", ministrante_atividade: "")
+    var viasegue: AtividadeAux = AtividadeAux (nome_atividade: "", descricao_atividade: "", dia_atividade: "", horario_atividade: "", local_atividade: "", ministrante_atividade: "")
     
     
     @IBOutlet weak var imagePalestrante: UIImageView!

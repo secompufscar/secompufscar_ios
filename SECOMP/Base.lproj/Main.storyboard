@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,7 +28,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdO-Ah-2X8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2982" y="2139"/>
+            <point key="canvasLocation" x="-2966" y="2066"/>
         </scene>
         <!--Home-->
         <scene sceneID="7BO-Hs-TAf">
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNq-96-fqo" id="syl-Nh-aXT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -101,13 +101,13 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aAl-0Q-yF8" id="vLn-09-2tX">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlY-ri-R8h">
                                             <rect key="frame" x="262" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -146,7 +146,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QMh-SM-KfD" id="chD-Pu-yWG">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -177,13 +177,13 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ox8-ME-tpa" id="8W2-E0-y4n">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre  a SECOMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-se-JAE">
                                                     <rect key="frame" x="32" y="21" width="138" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -196,13 +196,13 @@
                                         <rect key="frame" x="0.0" y="128" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLS-ZL-BFR" id="3pt-5v-bVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre o DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-VJ-dCx">
                                                     <rect key="frame" x="31" y="21" width="88" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -215,13 +215,13 @@
                                         <rect key="frame" x="0.0" y="192" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cin-8E-Jg1" id="PZP-0j-Geb">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a UFSCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-3L-0c2">
                                                     <rect key="frame" x="32" y="21" width="123" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -234,13 +234,13 @@
                                         <rect key="frame" x="0.0" y="256" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQj-kY-NmB" id="AWt-nU-fDw">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desenvolvedores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-dQ-q5S">
                                                     <rect key="frame" x="32" y="21" width="132" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -257,7 +257,7 @@
                             <outlet property="delegate" destination="Zgj-Rt-dzt" id="zc3-Fs-3IR"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="10g-Wa-A98"/>
+                    <navigationItem key="navigationItem" title="Sobre" id="10g-Wa-A98"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZR-Cl-gbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,7 +332,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNe-Ly-Ott">
                                 <rect key="frame" x="94" y="110" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -347,7 +347,7 @@
         <scene sceneID="YYI-vl-M7J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABT-yy-1T7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Programação" id="vEO-iJ-IOe"/>
+                    <tabBarItem key="tabBarItem" title="Programação" image="Calendar-50" id="vEO-iJ-IOe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XdX-Eo-puO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -362,11 +362,11 @@
             </objects>
             <point key="canvasLocation" x="-1484" y="-701"/>
         </scene>
-        <!--Twitter-->
+        <!--Notícias-->
         <scene sceneID="QQb-Du-L3T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lmd-zK-5z0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Twitter" id="sKs-RQ-4yA"/>
+                    <tabBarItem key="tabBarItem" title="Notícias" image="News-50" id="sKs-RQ-4yA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nz3-6b-9W2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -381,11 +381,11 @@
             </objects>
             <point key="canvasLocation" x="-1484" y="198"/>
         </scene>
-        <!--Favoritos-->
+        <!--Navigation Controller-->
         <scene sceneID="OyQ-FY-wDx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf7-ST-alc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favoritos" id="yke-fk-iik"/>
+                    <tabBarItem key="tabBarItem" selectedImage="Home-50" systemItem="favorites" id="yke-fk-iik"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1al-hc-tON">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -472,7 +472,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Nome do evento">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -526,7 +526,7 @@
         <scene sceneID="1Sd-9e-GJB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fV-xa-fMR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="Qd0-ZQ-kcg"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home Filled-50" id="Qd0-ZQ-kcg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vIq-pe-YLm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -545,7 +545,9 @@
         <scene sceneID="HtN-IM-N7d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d9n-sW-drA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sobre" id="brP-PA-XJg"/>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="Info-50" id="brP-PA-XJg">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LqL-sT-Lcy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -562,6 +564,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar-50" width="50" height="50"/>
+        <image name="Home Filled-50" width="50" height="50"/>
+        <image name="Home-50" width="50" height="50"/>
+        <image name="Info-50" width="50" height="50"/>
+        <image name="News-50" width="50" height="50"/>
         <image name="david-beckham" width="500" height="500"/>
     </resources>
 </document>

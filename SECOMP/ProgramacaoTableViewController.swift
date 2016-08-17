@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Atividade {
+class AtividadeAux {
     var nome_atividade: String
     var descricao_atividade: String
     var dia_atividade: String
@@ -43,7 +43,7 @@ class Atividade {
 
 class ProgramacaoTableViewController: UITableViewController {
     
-    var vect = [Atividade]()
+    var vect = [AtividadeAux]()
     
     override func viewWillAppear(animated: Bool) {
         
@@ -89,7 +89,7 @@ class ProgramacaoTableViewController: UITableViewController {
                         
                         for palestra in palestras {
                             self.vect.append(
-                                Atividade(nome_atividade: palestra["nome_atividade"]!, descricao_atividade: palestra["descricao_atividade"]!, dia_atividade: palestra["dia_atividade"]!, horario_atividade: palestra["horario_atividade"]!, local_atividade: palestra["local_atividade"]!, ministrante_atividade: palestra["ministrante_atividade"]!))
+                                AtividadeAux(nome_atividade: palestra["nome_atividade"]!, descricao_atividade: palestra["descricao_atividade"]!, dia_atividade: palestra["dia_atividade"]!, horario_atividade: palestra["horario_atividade"]!, local_atividade: palestra["local_atividade"]!, ministrante_atividade: palestra["ministrante_atividade"]!))
                         }
                         
                         //                        print(palestras[0])
