@@ -43,16 +43,6 @@ class EventoViewController: UIViewController {
         
         nomePalestrante.text = viasegue.ministrante_atividade
         
-//        let date = viasegue.data_inicio_atividade
-//        let calendar = NSCalendar.currentCalendar()
-//        let components = calendar.components([.Day , .Month , .Year], fromDate: date)
-        
-//        let year =  components.year
-//        let month = components.month
-//        let day = components.day
-    
-        
-//        labelHora.text = String(day) + "/" + String(month) + " - " + viasegue.hora_inicio_atividade
         labelHora.text = viasegue.data_inicio_atividade + " - " + viasegue.hora_inicio_atividade
         
         textDescricao.text = viasegue.descricao_atividade
@@ -62,9 +52,6 @@ class EventoViewController: UIViewController {
         imagePalestrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
         imagePalestrante.layer.cornerRadius = 10
         imagePalestrante.clipsToBounds = true
-//        imagePalestrante.image = UIImage(data: NSData(contentsOfURL: NSURL(fileURLWithPath: viasegue.foto_atividade))!)
-    
-        
     }
     
     override func viewWillAppear(animated: Bool) {
