@@ -46,6 +46,7 @@ class EventoViewController: UIViewController {
         labelHora.text = viasegue.data_inicio_atividade + " - " + viasegue.hora_inicio_atividade
         
         textDescricao.text = viasegue.descricao_atividade
+        textDescricao.scrollRangeToVisible(NSMakeRange(0, 0))
     
         
         imagePalestrante.layer.borderWidth = 1.75
