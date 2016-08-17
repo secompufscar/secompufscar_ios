@@ -251,7 +251,7 @@
 				TargetAttributes = {
 					D86E0FF11D6122C3007C6849 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 44J5U4Q8W5;
+						DevelopmentTeam = 3EZ6AU3J77;
 					};
 				};
 			};
@@ -450,7 +450,7 @@
 				);
 				INFOPLIST_FILE = SECOMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar.felipequecole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -469,7 +469,7 @@
 				);
 				INFOPLIST_FILE = SECOMP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.secompufscar.felipequecole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
