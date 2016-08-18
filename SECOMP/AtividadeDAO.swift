@@ -16,6 +16,8 @@ class AtividadeDAO {
     static var minicursos = [Atividade]()
     static var workshops = [Atividade]()
     
+    static var isUpdated = false
+    
     static func inserir(atividade: Atividade) {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -98,11 +100,13 @@ class AtividadeDAO {
             
             self.inserir(atividade)
             
+            self.isUpdated = false
+            
         }        
         
         do {
             try context.save()
-            print("Atualizou")
+            print("Banco Atualizou")
             
         } catch let erro as NSError {
             print(erro)
@@ -112,26 +116,32 @@ class AtividadeDAO {
     
     static func atualizarDados() {
         
-        let atividades = self.buscarTodos()
-        
-        self.palestras = []
-        self.minicursos = []
-        self.workshops = []
-        
-        for atividade in atividades {
-            if atividade.tipo == "palestra" {
-                self.palestras.append(atividade)
+        if self.isUpdated == false {
+            
+            let atividades = self.buscarTodos()
+            
+            self.palestras = []
+            self.minicursos = []
+            self.workshops = []
+            
+            for atividade in atividades {
+                if atividade.tipo == "palestra" {
+                    self.palestras.append(atividade)
+                }
+                else if atividade.tipo == "minicurso" {
+                    self.minicursos.append(atividade)
+                }
+                else if atividade.tipo == "workshop"{
+                    self.workshops.append(atividade)
+                }
             }
-            else if atividade.tipo == "minicurso" {
-                self.minicursos.append(atividade)
-            }
-            else if atividade.tipo == "workshop"{
-                self.workshops.append(atividade)
-            }
+            self.isUpdated = true
+            print("Dados")
+            print(self.palestras.count)
+            print(self.minicursos.count)
+            print(self.workshops.count)
         }
-        print(self.palestras.count)
-        print(self.minicursos.count)
-        print(self.workshops.count)
+        
     }
 
     

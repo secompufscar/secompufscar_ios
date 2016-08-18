@@ -11,6 +11,10 @@ class ProgramacaoTableViewController: UITableViewController {
     
     var atividades = [Atividade]()
     
+    func reload() {
+        self.tableView.reloadData()
+    }
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
@@ -32,15 +36,17 @@ class ProgramacaoTableViewController: UITableViewController {
         
     }
     
+    
+    @IBAction func refresh(sender: AnyObject) {
+        
+        DataFromSite.load()
+        self.tableView.reloadData()
+    }
+    
         override func viewWillAppear(animated: Bool) {
             
-        //self.segmentedControl.selectedSegmentIndex = 0
-        AtividadeDAO.atualizarDados()
-        segmentedControl.selectedSegmentIndex = 0
+        self.segmentedControl.selectedSegmentIndex = 0
         atividades = AtividadeDAO.palestras
-        self.tableView.reloadData()
-
-        //
         self.tableView.reloadData()
     }
     
