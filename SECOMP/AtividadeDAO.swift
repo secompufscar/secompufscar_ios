@@ -14,6 +14,7 @@ class AtividadeDAO {
     
     static var palestras = [Atividade]()
     static var minicursos = [Atividade]()
+    static var workshops = [Atividade]()
     
     static func inserir(atividade: Atividade) {
         
@@ -60,7 +61,7 @@ class AtividadeDAO {
         }
     }
     
-    static func atualizarBanco(atividades: [AtividadeAux], fotos: [UIImage], tipo: String) {
+    static func atualizarBanco(atividades: [AtividadeAux]) {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
@@ -74,8 +75,6 @@ class AtividadeDAO {
                 self.remover(atividade)
             }
         }
-        
-        var cont = 0
         
         for novaAtividade in atividades {
             
@@ -91,13 +90,11 @@ class AtividadeDAO {
             atividade.hora_fim_retorno = novaAtividade.hora_fim_retorno_atividade
             atividade.local = novaAtividade.local_atividade
             atividade.ministrante = novaAtividade.ministrante_atividade
-            atividade.tipo = tipo
+            atividade.tipo = novaAtividade.tipo_atividade
             atividade.favorito = false
             
-            let imageData = UIImageJPEGRepresentation(fotos[cont], 1)
+            let imageData = UIImageJPEGRepresentation(novaAtividade.imagem_atividade!, 1)
             atividade.foto = imageData
-            
-            cont = cont + 1
             
             self.inserir(atividade)
             
@@ -119,6 +116,7 @@ class AtividadeDAO {
         
         self.palestras = []
         self.minicursos = []
+        self.workshops = []
         
         for atividade in atividades {
             if atividade.tipo == "palestra" {
@@ -127,9 +125,13 @@ class AtividadeDAO {
             else if atividade.tipo == "minicurso" {
                 self.minicursos.append(atividade)
             }
+            else if atividade.tipo == "workshop"{
+                self.workshops.append(atividade)
+            }
         }
-        
         print(self.palestras.count)
+        print(self.minicursos.count)
+        print(self.workshops.count)
     }
 
     

@@ -20,6 +20,8 @@ class AtividadeAux {
     var local_atividade: String
     var ministrante_atividade: String
     var foto_atividade: String
+    var tipo_atividade: String?
+    var imagem_atividade: UIImage?
     
     init(
         nome_atividade: String,
@@ -47,12 +49,13 @@ class AtividadeAux {
 
 class DataFromSite {
     
-    static var palestras = [AtividadeAux]()
-    static var minicursos = [AtividadeAux]()
+    //static var palestras = [AtividadeAux]()
+    //static var minicursos = [AtividadeAux]()
+    static var atividades = [AtividadeAux]()
     
-    static var imagensPalestras = [UIImage]()
-    static var imagensMinicursos = [UIImage]()
-    static var imagensWorkshops = [UIImage]()
+    //static var imagensPalestras = [UIImage]()
+    //static var imagensMinicursos = [UIImage]()
+    //static var imagensWorkshops = [UIImage]()
     
     static func load() {
         let requestURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
@@ -74,8 +77,7 @@ class DataFromSite {
                     print(json)
                     print(json as? [[Dictionary<String, String>]])
                     //                    print(json["atividades"] as? [[[String: String]]])
-                    self.palestras = [AtividadeAux]()
-                    self.minicursos = [AtividadeAux]()
+                    self.atividades = []
                     
                     if let palestras = json["palestras"] as? [[String: String]] {
                         //                        print(palestras)
@@ -84,32 +86,52 @@ class DataFromSite {
                             
                            let aux = AtividadeAux(nome_atividade: palestra["nome_atividade"]!, descricao_atividade: palestra["descricao_atividade"]!, data_inicio_atividade: palestra["data_inicio_atividade"]!, hora_inicio_atividade: palestra["hora_inicio_atividade"]!, hora_fim_atividade: palestra["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: palestra["local_atividade"]!, ministrante_atividade: palestra["ministrante_atividade"]!, foto_atividade: palestra["foto_atividade"]!)
                             
-                            self.palestras.append(aux)
+                            aux.tipo_atividade = "palestra"
                             
                             let imageUrl = NSURL(string: aux.foto_atividade)
                             let data = NSData(contentsOfURL: imageUrl!)
-                            self.imagensPalestras.append(UIImage(data: data!)!)
+                            aux.imagem_atividade = UIImage(data: data!)
+                            
+                            self.atividades.append(aux)
+                            
+                            //self.imagensPalestras.append(UIImage(data: data!)!)
                             
                         }
                         
-                        AtividadeDAO.atualizarBanco(self.palestras, fotos: self.imagensPalestras, tipo: "palestra")
-
                         
                         if let minicursos = json["minicursos"] as? [[String: String]] {
                             for minicurso in minicursos {
                                 
                                 let aux = AtividadeAux(nome_atividade: minicurso["nome_atividade"]!, descricao_atividade: minicurso["descricao_atividade"]!, data_inicio_atividade: minicurso["data_inicio_atividade"]!, hora_inicio_atividade: minicurso["hora_inicio_atividade"]!, hora_fim_atividade: minicurso["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: minicurso["local_atividade"]!, ministrante_atividade: minicurso["ministrante_atividade"]!, foto_atividade: minicurso["foto_atividade"]!)
                                 
-                                self.minicursos.append(aux)
                                 
+                                aux.tipo_atividade = "minicurso"
                                 let imageUrl = NSURL(string: aux.foto_atividade)
                                 let data = NSData(contentsOfURL: imageUrl!)
-                                self.imagensPalestras.append(UIImage(data: data!)!)
+                                aux.imagem_atividade = UIImage(data: data!)
+                                
+                                self.atividades.append(aux)
                                 
                             }
                             
-                            AtividadeDAO.atualizarBanco(self.minicursos, fotos: self.imagensMinicursos, tipo: "minicurso")
+                            if let workshops = json["workshops"] as? [[String: String]] {
+                                for minicurso in workshops {
+                                    
+                                    let aux = AtividadeAux(nome_atividade: minicurso["nome_atividade"]!, descricao_atividade: minicurso["descricao_atividade"]!, data_inicio_atividade: minicurso["data_inicio_atividade"]!, hora_inicio_atividade: minicurso["hora_inicio_atividade"]!, hora_fim_atividade: minicurso["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: minicurso["local_atividade"]!, ministrante_atividade: minicurso["ministrante_atividade"]!, foto_atividade: minicurso["foto_atividade"]!)
+                                    
+                                    
+                                    aux.tipo_atividade = "workshop"
+                                    let imageUrl = NSURL(string: aux.foto_atividade)
+                                    let data = NSData(contentsOfURL: imageUrl!)
+                                    aux.imagem_atividade = UIImage(data: data!)
+                                    
+                                    self.atividades.append(aux)
+                                    
+                                }
+                            }
                         }
+                        
+                        AtividadeDAO.atualizarBanco(self.atividades)
                         
                     } else {
                         print("Não consegui fazer o parsing :(")
