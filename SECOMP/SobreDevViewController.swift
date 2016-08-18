@@ -10,12 +10,8 @@ import UIKit
 
 class SobreDevViewController: UIViewController {
 
-    @IBOutlet weak var aboutDev: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        aboutDev.scrollRangeToVisible(NSMakeRange(0, 0))
         
     }
 
