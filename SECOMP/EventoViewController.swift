@@ -50,9 +50,6 @@ class EventoViewController: UIViewController {
         imagePalestrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
         imagePalestrante.layer.cornerRadius = 10
         imagePalestrante.clipsToBounds = true
-        
-//        viasegue.favorito = true
-        AtividadeDAO.salvar()
     }
     
     override func viewWillAppear(animated: Bool) {

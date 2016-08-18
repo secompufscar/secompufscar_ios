@@ -11,10 +11,6 @@ class ProgramacaoTableViewController: UITableViewController {
     
     var atividades = [Atividade]()
     
-    func reload() {
-        self.tableView.reloadData()
-    }
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBAction func indexChanged(sender: UISegmentedControl) {
@@ -50,10 +46,6 @@ class ProgramacaoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.spinningWhell.center = self.view.center
-//        self.view.addSubview(self.spinningWhell)
-//        self.spinningWhell.startAnimating()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -62,7 +54,7 @@ class ProgramacaoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
-        //self.tableView.reloadData()
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,7 +135,6 @@ class ProgramacaoTableViewController: UITableViewController {
             if let destination = segue.destinationViewController as? EventoViewController {
                 let path = tableView.indexPathForSelectedRow?.row
                 destination.viasegue = atividades[path!]
-                //destination.imagem = imagens[path!]
             }
         }
     }

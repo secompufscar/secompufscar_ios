@@ -27,8 +27,6 @@ class AtividadeDAO {
         
         do {
             try context.save()
-            print("Salvou o/")
-            
         } catch let erro as NSError {
             print(erro)
         }
@@ -42,8 +40,6 @@ class AtividadeDAO {
         
         do {
             try context.save()
-            print("Deletou o/")
-            
         } catch let erro as NSError {
             print(erro)
         }
@@ -56,8 +52,6 @@ class AtividadeDAO {
         
         do {
             try context.save()
-            print("Salvou")
-            
         } catch let erro as NSError {
             print(erro)
         }
@@ -82,7 +76,6 @@ class AtividadeDAO {
             
             let atividade = Atividade()
             
-            
             atividade.nome = novaAtividade.nome_atividade
             atividade.descricao = novaAtividade.descricao_atividade
             atividade.data = novaAtividade.data_inicio_atividade
@@ -106,7 +99,7 @@ class AtividadeDAO {
         
         do {
             try context.save()
-            print("Banco Atualizou")
+            print("Banco Atualizado")
             
         } catch let erro as NSError {
             print(erro)
@@ -136,12 +129,7 @@ class AtividadeDAO {
                 }
             }
             self.isUpdated = true
-            print("Dados")
-            print(self.palestras.count)
-            print(self.minicursos.count)
-            print(self.workshops.count)
         }
-        
     }
 
     
@@ -157,8 +145,6 @@ class AtividadeDAO {
                 
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]
-            print("Total de atividades: ", atividades.count)
-            
         } catch let erro as NSError {
             print(erro)
         }
@@ -178,9 +164,7 @@ class AtividadeDAO {
         request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
         
         do {
-            atividades = try context.executeFetchRequest(request) as! [Atividade]
-            print("Total de Favoritos: ", atividades.count)
-            
+            atividades = try context.executeFetchRequest(request) as! [Atividade]            
         } catch let erro as NSError {
             print(erro)
         }

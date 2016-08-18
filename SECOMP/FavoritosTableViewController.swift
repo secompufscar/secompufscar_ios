@@ -107,25 +107,6 @@ class FavoritosTableViewController: UITableViewController {
             let path = tableView.indexPathForSelectedRow?.row
             
             destination.viasegue = favoritos[path!]
-            
-//            if atividades[path!].tipo == "palestra" {
-//                destination.viasegue =
-//            }
         }
     }
-    
-//    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        // Get the new view controller using segue.destinationViewController.
-//        // Pass the selected object to the new view controller.
-//        if segue.identifier == "showDetail" {
-//            if let destination = segue.destinationViewController as? EventoViewController {
-//                let path = tableView.indexPathForSelectedRow?.row
-//                destination.viasegue = atividades[path!]
-//                //destination.imagem = imagens[path!]
-//            }
-//        }
-//    }
-
-
 }

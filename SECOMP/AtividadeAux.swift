@@ -62,18 +62,17 @@ class DataFromSite {
             let statusCode = httpResponse.statusCode
             
             if (statusCode == 200) {
-                print("Everyone is fine, file downloaded successfully.")
+                print("Download concluído")
                 
                 do {
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
                     
                     print(json)
                     print(json as? [[Dictionary<String, String>]])
-                    //                    print(json["atividades"] as? [[[String: String]]])
+
                     self.atividades = []
                     
                     if let palestras = json["palestras"] as? [[String: String]] {
-                        //                        print(palestras)
                         
                         for palestra in palestras {
                             
