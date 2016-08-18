@@ -18,11 +18,17 @@ class EventoViewController: UIViewController {
     
     @IBOutlet weak var textDescricao: UITextView!
     
-    
     var viasegue: Atividade = Atividade ()
     
     @IBOutlet weak var imagePalestrante: UIImageView!
     
+    @IBOutlet weak var botaoMarcarFavorito: UIBarButtonItem!
+    
+    @IBAction func marcarFavorito(sender: UIBarButtonItem) {
+        viasegue.favorito = true
+        AtividadeDAO.salvar()
+        AtividadeDAO.atualizarDados()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +51,7 @@ class EventoViewController: UIViewController {
         imagePalestrante.layer.cornerRadius = 10
         imagePalestrante.clipsToBounds = true
         
-        viasegue.favorito = true
+//        viasegue.favorito = true
         AtividadeDAO.salvar()
     }
     

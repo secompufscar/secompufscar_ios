@@ -595,10 +595,15 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detalhes" id="aNw-pc-ula">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="bgO-l7-pHK"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RLt-ka-hGA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RLt-ka-hGA">
+                            <connections>
+                                <action selector="marcarFavorito:" destination="xdP-fN-2Ea" id="iEb-wg-NVv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="botaoMarcarFavorito" destination="RLt-ka-hGA" id="lFw-UC-XpE"/>
                         <outlet property="imagePalestrante" destination="qQ3-f7-Gz9" id="Iki-PO-V9a"/>
                         <outlet property="label" destination="gF1-Jo-HsD" id="Knk-dY-iVR"/>
                         <outlet property="labelHora" destination="JiZ-iQ-vHK" id="Do5-pe-agz"/>
@@ -939,6 +944,6 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
         <image name="vi_secomp" width="2560" height="1921"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="26F-qU-biG"/>
+        <segue reference="7mm-lD-DJw"/>
     </inferredMetricsTieBreakers>
 </document>

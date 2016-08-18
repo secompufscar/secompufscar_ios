@@ -38,13 +38,11 @@ class ProgramacaoTableViewController: UITableViewController {
     
     
     @IBAction func refresh(sender: AnyObject) {
-        
         DataFromSite.load()
         self.tableView.reloadData()
     }
     
-        override func viewWillAppear(animated: Bool) {
-            
+    override func viewWillAppear(animated: Bool) {
         self.segmentedControl.selectedSegmentIndex = 0
         atividades = AtividadeDAO.palestras
         self.tableView.reloadData()
@@ -52,6 +50,10 @@ class ProgramacaoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.spinningWhell.center = self.view.center
+//        self.view.addSubview(self.spinningWhell)
+//        self.spinningWhell.startAnimating()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
