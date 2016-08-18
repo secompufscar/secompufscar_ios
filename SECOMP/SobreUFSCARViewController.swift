@@ -15,10 +15,13 @@ class SobreUFSCARViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //AboutUFSCAR.scrollEnabled = false
         AboutUFSCAR.scrollRangeToVisible(NSMakeRange(0, 0))
+        AboutUFSCAR.scrollEnabled = false
+         AboutUFSCAR.scrollEnabled = true
     }
     
-    override func viewWillAppear(animated: Bool){
+    override func viewDidAppear(animated: Bool){
         AboutUFSCAR.scrollRangeToVisible(NSMakeRange(0, 0))
 
     }

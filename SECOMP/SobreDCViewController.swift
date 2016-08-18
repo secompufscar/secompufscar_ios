@@ -14,13 +14,17 @@ class SobreDCViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        AboutDC.scrollRangeToVisible(NSMakeRange(0, 0))
+               AboutDC.scrollRangeToVisible(NSMakeRange(0, 0))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        AboutDC.scrollRangeToVisible(NSMakeRange(0, 0))
     }
     
 
