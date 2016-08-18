@@ -10,7 +10,10 @@ import UIKit
 
 class FavoritosTableViewCell: UITableViewCell {
 
+//    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var horarioLabel: UILabel!
+    @IBOutlet weak var imagemMinistrante: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
