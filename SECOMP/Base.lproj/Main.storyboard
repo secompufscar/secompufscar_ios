@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNq-96-fqo" id="syl-Nh-aXT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -101,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aAl-0Q-yF8" id="vLn-09-2tX">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlY-ri-R8h">
@@ -184,7 +184,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QMh-SM-KfD" id="chD-Pu-yWG">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="45.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO9-jh-jMy">
@@ -233,7 +233,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ox8-ME-tpa" id="8W2-E0-y4n">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre  a SECOMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-se-JAE">
@@ -252,7 +252,7 @@
                                         <rect key="frame" x="0.0" y="128" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLS-ZL-BFR" id="3pt-5v-bVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre o DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-VJ-dCx">
@@ -271,7 +271,7 @@
                                         <rect key="frame" x="0.0" y="192" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cin-8E-Jg1" id="PZP-0j-Geb">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a UFSCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-3L-0c2">
@@ -290,7 +290,7 @@
                                         <rect key="frame" x="0.0" y="256" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQj-kY-NmB" id="AWt-nU-fDw">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desenvolvedores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-dQ-q5S">
@@ -767,46 +767,101 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portal" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-gM-5E4">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywt-qH-dgh">
-                                <rect key="frame" x="20" y="267" width="560" height="329"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">André Zanon
-Felipe Quécole
-Felipe Sampaio
-Isadora Gallerani
-Marcelo de Oliveira</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="93w-s1-bXp">
+                                <rect key="frame" x="20" y="257" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="fDj-NZ-eHb"/>
+                                    <constraint firstAttribute="height" constant="43" id="mF9-9Y-0Ux"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="André Zanon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYq-v6-Ndr">
+                                <rect key="frame" x="71" y="268" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-ZN-EqG">
+                                <rect key="frame" x="20" y="308" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="BgU-v9-1Hq"/>
+                                    <constraint firstAttribute="width" constant="43" id="ro8-42-rxI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felipe Quécole" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9O-Ei-1Ph">
+                                <rect key="frame" x="71" y="319" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="32G-JM-We0">
+                                <rect key="frame" x="20" y="359" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ReE-vP-79G"/>
+                                    <constraint firstAttribute="width" constant="43" id="uKa-Ee-tdu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Felipe Sampaio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWk-B5-FKg">
+                                <rect key="frame" x="71" y="370" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-Rz-Nhg">
+                                <rect key="frame" x="20" y="410" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="0Ar-l8-pYb"/>
+                                    <constraint firstAttribute="height" constant="43" id="b79-zU-IPd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isadora Gallerani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1Q-To-Fhr">
+                                <rect key="frame" x="71" y="421" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="p5E-mo-MV6">
+                                <rect key="frame" x="20" y="461" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="TKk-sx-C7D"/>
+                                    <constraint firstAttribute="width" constant="43" id="cjZ-xi-EWR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marcelo de Oliveira" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nw-fQ-M1m">
+                                <rect key="frame" x="71" y="472" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5cj-Sa-jmR" firstAttribute="top" secondItem="2Si-gM-5E4" secondAttribute="bottom" constant="313" id="1Fb-nb-tHc"/>
-                            <constraint firstItem="ywt-qH-dgh" firstAttribute="trailing" secondItem="oLM-Wo-fcK" secondAttribute="trailingMargin" id="4ZL-z1-Hua"/>
-                            <constraint firstItem="ywt-qH-dgh" firstAttribute="centerX" secondItem="oLM-Wo-fcK" secondAttribute="centerX" id="519-uI-wEZ"/>
-                            <constraint firstItem="ywt-qH-dgh" firstAttribute="centerX" secondItem="2Si-gM-5E4" secondAttribute="centerX" id="A0B-nA-YhH"/>
+                            <constraint firstItem="93w-s1-bXp" firstAttribute="top" secondItem="2Si-gM-5E4" secondAttribute="bottom" constant="19" id="2Gr-qx-dIj"/>
+                            <constraint firstItem="32G-JM-We0" firstAttribute="top" secondItem="xsf-ZN-EqG" secondAttribute="bottom" constant="8" id="3MU-jn-00m"/>
+                            <constraint firstItem="j9O-Ei-1Ph" firstAttribute="top" secondItem="QYq-v6-Ndr" secondAttribute="bottom" constant="30" id="4Z0-XU-5aW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="93w-s1-bXp" secondAttribute="leading" id="9DX-BV-CIi"/>
+                            <constraint firstItem="xsf-ZN-EqG" firstAttribute="top" secondItem="93w-s1-bXp" secondAttribute="bottom" constant="8" id="B3R-3q-utW"/>
                             <constraint firstItem="2Si-gM-5E4" firstAttribute="top" secondItem="DjY-X5-xo3" secondAttribute="bottom" constant="-44" id="E4O-yB-CGV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="32G-JM-We0" secondAttribute="leading" id="FBj-aT-qTb"/>
+                            <constraint firstItem="f1Q-To-Fhr" firstAttribute="top" secondItem="EWk-B5-FKg" secondAttribute="bottom" constant="30" id="IdP-qC-dNQ"/>
                             <constraint firstItem="2Si-gM-5E4" firstAttribute="centerX" secondItem="oLM-Wo-fcK" secondAttribute="centerX" id="Jqf-g8-BOH"/>
-                            <constraint firstItem="5cj-Sa-jmR" firstAttribute="top" secondItem="ywt-qH-dgh" secondAttribute="bottom" constant="-45" id="Pbx-U3-JW0"/>
-                            <constraint firstItem="ywt-qH-dgh" firstAttribute="top" secondItem="2Si-gM-5E4" secondAttribute="bottom" constant="29" id="R1z-YE-sss"/>
+                            <constraint firstItem="6Nw-fQ-M1m" firstAttribute="top" secondItem="f1Q-To-Fhr" secondAttribute="bottom" constant="30" id="KwH-P3-Yow"/>
+                            <constraint firstItem="D7a-Rz-Nhg" firstAttribute="top" secondItem="32G-JM-We0" secondAttribute="bottom" constant="8" id="P9K-e7-qvQ"/>
+                            <constraint firstItem="EWk-B5-FKg" firstAttribute="top" secondItem="j9O-Ei-1Ph" secondAttribute="bottom" constant="30" id="RiO-Ue-9Rr"/>
+                            <constraint firstItem="EWk-B5-FKg" firstAttribute="leading" secondItem="32G-JM-We0" secondAttribute="trailing" constant="8" id="UI8-9i-fTa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D7a-Rz-Nhg" secondAttribute="leading" id="Wnb-1q-WOz"/>
+                            <constraint firstItem="p5E-mo-MV6" firstAttribute="top" secondItem="D7a-Rz-Nhg" secondAttribute="bottom" constant="8" id="XGl-JV-BUK"/>
+                            <constraint firstItem="j9O-Ei-1Ph" firstAttribute="leading" secondItem="xsf-ZN-EqG" secondAttribute="trailing" constant="8" id="YTo-Cs-A3j"/>
+                            <constraint firstItem="f1Q-To-Fhr" firstAttribute="leading" secondItem="D7a-Rz-Nhg" secondAttribute="trailing" constant="8" id="csJ-ij-SlU"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xsf-ZN-EqG" secondAttribute="leading" id="dyS-13-LvI"/>
+                            <constraint firstItem="QYq-v6-Ndr" firstAttribute="leading" secondItem="93w-s1-bXp" secondAttribute="trailing" constant="8" id="fFf-kQ-gGk"/>
                             <constraint firstItem="2Si-gM-5E4" firstAttribute="leading" secondItem="oLM-Wo-fcK" secondAttribute="leading" id="ghY-3m-zBy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="p5E-mo-MV6" secondAttribute="leading" id="hc2-hA-0dB"/>
+                            <constraint firstItem="QYq-v6-Ndr" firstAttribute="top" secondItem="2Si-gM-5E4" secondAttribute="bottom" constant="30" id="sUi-dx-Qt6"/>
+                            <constraint firstItem="6Nw-fQ-M1m" firstAttribute="leading" secondItem="p5E-mo-MV6" secondAttribute="trailing" constant="8" id="zk4-ic-TKi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Desenvolvedores" id="P4f-uP-D95"/>
-                    <connections>
-                        <outlet property="aboutDev" destination="ywt-qH-dgh" id="UxW-ZY-AmJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ct2-a8-D0B" sceneMemberID="firstResponder"/>
             </objects>
@@ -822,6 +877,7 @@ Marcelo de Oliveira</string>
         <image name="david-beckham" width="500" height="500"/>
         <image name="fachada_dc_ufscar" width="2560" height="1122"/>
         <image name="portal" width="742" height="334"/>
+        <image name="secomp-logo-fundobranco-appicon" width="1024" height="1024"/>
         <image name="ufscar_aerea" width="2048" height="833"/>
         <image name="vi_secomp" width="2560" height="1921"/>
     </resources>
