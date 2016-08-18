@@ -45,6 +45,8 @@ class FavoritosTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellFavIdentifier", forIndexPath: indexPath) as! FavoritosTableViewCell
         cell.label.text = favoritos[indexPath.row].nome
+        cell.horarioLabel.text = favoritos[indexPath.row].hora_inicio
+        cell.imagemMinistrante.image = UIImage(data: favoritos[indexPath.row].foto!)
         
         return cell
     }
@@ -84,14 +86,37 @@ class FavoritosTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if let destination = segue.destinationViewController as? EventoViewController {
+            let path = tableView.indexPathForSelectedRow?.row
+            
+            destination.viasegue = favoritos[path!]
+            
+//            if atividades[path!].tipo == "palestra" {
+//                destination.viasegue =
+//            }
+        }
     }
-    */
+    
+//    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//        if segue.identifier == "showDetail" {
+//            if let destination = segue.destinationViewController as? EventoViewController {
+//                let path = tableView.indexPathForSelectedRow?.row
+//                destination.viasegue = atividades[path!]
+//                //destination.imagem = imagens[path!]
+//            }
+//        }
+//    }
+
 
 }
