@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="-672" y="198"/>
         </scene>
-        <!--Programação-->
+        <!--Programacao Table View Controller-->
         <scene sceneID="gXX-Yb-PFh">
             <objects>
                 <tableViewController id="JtT-5N-bEZ" customClass="ProgramacaoTableViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,24 @@
                             <outlet property="delegate" destination="JtT-5N-bEZ" id="ZUi-ar-X9x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Programação" id="DXk-lB-ar0"/>
+                    <navigationItem key="navigationItem" id="DXk-lB-ar0">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="naa-Uh-iTJ">
+                            <rect key="frame" x="176" y="7" width="248" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Palestras"/>
+                                <segment title="Minicursos"/>
+                                <segment title="Workshops"/>
+                            </segments>
+                            <connections>
+                                <action selector="indexChanged:" destination="JtT-5N-bEZ" eventType="valueChanged" id="obQ-eA-2mN"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="naa-Uh-iTJ" id="lYY-0V-BbV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiF-yM-njr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
