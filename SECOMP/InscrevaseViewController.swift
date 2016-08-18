@@ -1,17 +1,24 @@
 //
-//  HomeViewController.swift
+//  InscrevaseViewController.swift
 //  SECOMP
 //
-//  Created by FelipeSampaio on 8/15/16.
+//  Created by Student on 8/18/16.
 //  Copyright © 2016 secompufscar. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class InscrevaseViewController: UIViewController {
 
+    @IBOutlet weak var AreadoParticipante: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let web = NSURL (string: "https://secompufscar.com.br/2016/areadoparticipante");
+        let requestObj = NSURLRequest(URL: web!);
+        
+        AreadoParticipante.loadRequest(requestObj);
 
         // Do any additional setup after loading the view.
     }
@@ -19,11 +26,6 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func createNotificationTest(sender: AnyObject) {
-        sendNotification()
     }
     
 
