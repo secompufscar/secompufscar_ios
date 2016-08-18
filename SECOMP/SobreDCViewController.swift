@@ -14,9 +14,7 @@ class SobreDCViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //AboutDC.attributedText = NSAttributedString(
-        //AboutDC.text = "O Departamento de Computação existe desde 1972, sendo responsável por habilitar e colocar com excelência anualmente no mercado de trabalho cerca de uma centena de profissionais, que atuam em empresas e em Instituições de Ensino Superior. \n\nAtento à constante evolução na área de computação, o DC-UFSCar tem atuado na vanguarda do desenvolvimento tecnológico, firmando-se no cenário nacional e internacional como um centro de pesquisa bastante atuante.\n\nTexto obtido da página institucional do Departamento de Computação da UFSCar, disponível em www.dc.ufscar.br."
-        AboutDC.scrollRangeToVisible(NSMakeRange(0, 0))
+               AboutDC.scrollRangeToVisible(NSMakeRange(0, 0))
     }
 
     override func didReceiveMemoryWarning() {
