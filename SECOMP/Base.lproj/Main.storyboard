@@ -20,8 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="ABT-yy-1T7" kind="relationship" relationship="viewControllers" id="ZwC-kJ-fqn"/>
-                        <segue destination="Lmd-zK-5z0" kind="relationship" relationship="viewControllers" id="iyp-PT-UEP"/>
                         <segue destination="Mf7-ST-alc" kind="relationship" relationship="viewControllers" id="Gqz-06-A1L"/>
+                        <segue destination="Lmd-zK-5z0" kind="relationship" relationship="viewControllers" id="iyp-PT-UEP"/>
                         <segue destination="c7V-KL-brU" kind="relationship" relationship="viewControllers" id="xIj-AI-ceR"/>
                         <segue destination="d9n-sW-drA" kind="relationship" relationship="viewControllers" id="bTi-Ne-vWV"/>
                     </connections>
@@ -163,38 +163,35 @@
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="57.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VO9-jh-jMy">
-                                            <rect key="frame" x="279" y="12" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-t8-Lzb">
-                                            <rect key="frame" x="57" y="8" width="496" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-t8-Lzb">
+                                            <rect key="frame" x="64" y="8" width="489" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-d5-g5I">
-                                            <rect key="frame" x="57" y="28" width="496" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWc-d5-g5I">
+                                            <rect key="frame" x="64" y="28" width="489" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aO5-0H-rny">
-                                            <rect key="frame" x="8" y="7" width="41" height="42"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aO5-0H-rny">
+                                            <rect key="frame" x="15" y="8" width="41" height="42"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="41.5" id="6mI-Cu-NQZ"/>
-                                                <constraint firstAttribute="width" constant="41.5" id="SkB-ES-Ovd"/>
+                                                <constraint firstAttribute="height" constant="42" id="ajd-QB-mSW"/>
+                                                <constraint firstAttribute="width" constant="41" id="bex-4a-fRg"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="VO9-jh-jMy" firstAttribute="centerX" secondItem="chD-Pu-yWG" secondAttribute="centerX" id="Bo9-5V-2Li"/>
-                                        <constraint firstItem="VO9-jh-jMy" firstAttribute="centerY" secondItem="chD-Pu-yWG" secondAttribute="centerY" id="DBd-gb-cxj"/>
-                                        <constraint firstItem="hWc-d5-g5I" firstAttribute="top" secondItem="xg2-t8-Lzb" secondAttribute="bottom" constant="-0.5" id="cXE-du-h9K"/>
-                                        <constraint firstItem="hWc-d5-g5I" firstAttribute="leading" secondItem="aO5-0H-rny" secondAttribute="trailing" constant="8" id="kiP-5h-2tw"/>
-                                        <constraint firstItem="xg2-t8-Lzb" firstAttribute="leading" secondItem="aO5-0H-rny" secondAttribute="trailing" constant="8" id="tp4-md-aDe"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xg2-t8-Lzb" secondAttribute="trailing" constant="6" id="1fQ-rA-SIa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hWc-d5-g5I" secondAttribute="trailing" constant="6" id="4TH-tb-UVm"/>
+                                        <constraint firstAttribute="topMargin" secondItem="aO5-0H-rny" secondAttribute="top" id="Jqx-Nm-n79"/>
+                                        <constraint firstItem="xg2-t8-Lzb" firstAttribute="leading" secondItem="aO5-0H-rny" secondAttribute="trailing" constant="8" id="KGw-LS-HwG"/>
+                                        <constraint firstAttribute="topMargin" secondItem="xg2-t8-Lzb" secondAttribute="top" id="Yo9-fm-K1Y"/>
+                                        <constraint firstItem="hWc-d5-g5I" firstAttribute="top" secondItem="xg2-t8-Lzb" secondAttribute="bottom" constant="-1" id="a0Y-bK-lNE"/>
+                                        <constraint firstItem="aO5-0H-rny" firstAttribute="leading" secondItem="chD-Pu-yWG" secondAttribute="leadingMargin" constant="7" id="dOC-Pp-gbC"/>
+                                        <constraint firstItem="hWc-d5-g5I" firstAttribute="leading" secondItem="aO5-0H-rny" secondAttribute="trailing" constant="8" id="rAk-7Z-0qD"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -413,7 +410,7 @@
         <scene sceneID="OyQ-FY-wDx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf7-ST-alc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="Home-50" systemItem="favorites" id="yke-fk-iik"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="kc4-dg-N0L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1al-hc-tON">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -428,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="-1492" y="1051"/>
         </scene>
-        <!--Programação Info-->
+        <!--teste-->
         <scene sceneID="mm8-mL-BNF">
             <objects>
-                <viewController title="Programação Info" id="xdP-fN-2Ea" customClass="EventoViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="teste" id="xdP-fN-2Ea" customClass="EventoViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lbT-LH-WHi"/>
                         <viewControllerLayoutGuide type="bottom" id="tQ6-MA-zJX"/>
@@ -593,6 +590,10 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detalhes" id="aNw-pc-ula">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="bgO-l7-pHK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RLt-ka-hGA"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imagePalestrante" destination="qQ3-f7-Gz9" id="Iki-PO-V9a"/>
@@ -910,7 +911,6 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
     <resources>
         <image name="Calendar-50" width="50" height="50"/>
         <image name="Employee Card-50" width="50" height="50"/>
-        <image name="Home-50" width="50" height="50"/>
         <image name="Info-50" width="50" height="50"/>
         <image name="News-50" width="50" height="50"/>
         <image name="david-beckham" width="500" height="500"/>

@@ -45,8 +45,12 @@ class FavoritosTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellFavIdentifier", forIndexPath: indexPath) as! FavoritosTableViewCell
         cell.label.text = favoritos[indexPath.row].nome
-        cell.horarioLabel.text = favoritos[indexPath.row].hora_inicio
+        cell.horarioLabel.text = favoritos[indexPath.row].data! + ", " + favoritos[indexPath.row].hora_inicio!
         cell.imagemMinistrante.image = UIImage(data: favoritos[indexPath.row].foto!)
+        cell.imagemMinistrante.layer.borderWidth = 0.75
+        cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
+        cell.imagemMinistrante.layer.cornerRadius = 5
+        cell.imagemMinistrante.clipsToBounds = true
         
         return cell
     }

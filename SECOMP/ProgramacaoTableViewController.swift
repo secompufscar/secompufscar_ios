@@ -86,6 +86,11 @@ class ProgramacaoTableViewController: UITableViewController {
         cell.label.text = atividades[indexPath.row].nome
         cell.horarioLabel.text = atividades[indexPath.row].data! + " " + atividades[indexPath.row].hora_inicio!
         cell.imagemMinistrante.image = UIImage(data: atividades[indexPath.row].foto!)
+        cell.imagemMinistrante.layer.borderWidth = 0.75
+        cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
+        cell.imagemMinistrante.layer.cornerRadius = 5
+        cell.imagemMinistrante.clipsToBounds = true
+
 
         return cell
     }
