@@ -19,18 +19,18 @@ class EventoViewController: UIViewController {
     @IBOutlet weak var textDescricao: UITextView!
     
     
-    var viasegue: AtividadeAux = AtividadeAux (
-        nome_atividade: "",
-        descricao_atividade: "",
-        data_inicio_atividade: "",
-        hora_inicio_atividade: "",
-        hora_fim_atividade: "",
-        hora_retorno_atividade: "",
-        hora_fim_retorno_atividade: "",
-        local_atividade: "",
-        ministrante_atividade: "",
-        foto_atividade: "")
-    var imagem = UIImage()
+    var viasegue: Atividade = Atividade ()
+//        nome_atividade: "",
+//        descricao_atividade: "",
+//        data_inicio_atividade: "",
+//        hora_inicio_atividade: "",
+//        hora_fim_atividade: "",
+//        hora_retorno_atividade: "",
+//        hora_fim_retorno_atividade: "",
+//        local_atividade: "",
+//        ministrante_atividade: "",
+//        foto_atividade: "")
+    //var imagem = UIImage()
     
     @IBOutlet weak var imagePalestrante: UIImageView!
     
@@ -49,16 +49,16 @@ class EventoViewController: UIViewController {
 //        }
 //        print(viasegue.foto_atividade)
         
-        label.text = viasegue.nome_atividade
+        label.text = viasegue.nome!
         
-        nomePalestrante.text = viasegue.ministrante_atividade
+        nomePalestrante.text = viasegue.ministrante
         
-        labelHora.text = viasegue.data_inicio_atividade + " - " + viasegue.hora_inicio_atividade
+        labelHora.text = viasegue.data! + " - " + viasegue.hora_inicio!
         
-        textDescricao.text = viasegue.descricao_atividade
+        textDescricao.text = viasegue.descricao
         textDescricao.scrollRangeToVisible(NSMakeRange(0, 0))
     
-        imagePalestrante.image = imagem
+        imagePalestrante.image = UIImage(data: viasegue.foto!)
         imagePalestrante.layer.borderWidth = 1.75
         imagePalestrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
         imagePalestrante.layer.cornerRadius = 10

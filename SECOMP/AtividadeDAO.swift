@@ -57,7 +57,7 @@ class AtividadeDAO {
         }
     }
     
-    static func atualizar(atividades: [AtividadeAux]) {
+    static func atualizar(atividades: [AtividadeAux], fotos: [UIImage], tipo: String) {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
@@ -72,11 +72,12 @@ class AtividadeDAO {
             }
         }
         
+        var cont = 0
+        
         for novaAtividade in atividades {
             
             let atividade = Atividade()
             
-            var image = UIImage()
             
             atividade.nome = novaAtividade.nome_atividade
             atividade.descricao = novaAtividade.descricao_atividade
@@ -87,15 +88,17 @@ class AtividadeDAO {
             atividade.hora_fim_retorno = novaAtividade.hora_fim_retorno_atividade
             atividade.local = novaAtividade.local_atividade
             atividade.ministrante = novaAtividade.ministrante_atividade
-            atividade.tipo = ""
+            atividade.tipo = tipo
             atividade.favorito = false
             
-            let imageData = UIImageJPEGRepresentation(image, 1)
+            let imageData = UIImageJPEGRepresentation(fotos[cont], 1)
             atividade.foto = imageData
             
-        }
-        
-        
+            cont = cont + 1
+            
+            self.inserir(atividade)
+            
+        }        
         
         do {
             try context.save()
@@ -116,7 +119,7 @@ class AtividadeDAO {
         var atividades: [Atividade] = []
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "Atividade")
-        request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        //request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
                 
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]
@@ -138,7 +141,7 @@ class AtividadeDAO {
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "Atividade")
         request.predicate = NSPredicate(format: "favorito == true")
-        request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        //request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
         
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]
@@ -150,7 +153,5 @@ class AtividadeDAO {
         
         return atividades
 
-    }
-    
-    
+    }   
 }
