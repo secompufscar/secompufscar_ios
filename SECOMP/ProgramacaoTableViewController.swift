@@ -10,8 +10,6 @@ import UIKit
 class ProgramacaoTableViewController: UITableViewController {
     
     var atividades = [Atividade]()
-    //var imagens = [UIImage]()
-    
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -21,22 +19,13 @@ class ProgramacaoTableViewController: UITableViewController {
         {
         case 0:
             atividades = AtividadeDAO.palestras
-            //imagens = DataFromSite.imagensPalestras
-//            for _ in self.atividades {
-//                self.imagens.append(UIImage())
-//            }
             tableView.reloadData()
         case 1:
            atividades = AtividadeDAO.minicursos
-            //imagens = DataFromSite.imagensMinicursos
-//            for _ in self.atividades {
-//                self.imagens.append(UIImage())
-//            }
             tableView.reloadData()
-//            loadDataFromSite("minicursos")
         case 2:
+            atividades = AtividadeDAO.workshops
             tableView.reloadData()
-//            loadDataFromSite("palestras")
         default:
             break; 
         }
@@ -45,13 +34,14 @@ class ProgramacaoTableViewController: UITableViewController {
     
         override func viewWillAppear(animated: Bool) {
             
-        self.segmentedControl.selectedSegmentIndex = 0
+        //self.segmentedControl.selectedSegmentIndex = 0
         AtividadeDAO.atualizarDados()
-
+        segmentedControl.selectedSegmentIndex = 0
         atividades = AtividadeDAO.palestras
         self.tableView.reloadData()
-        //imagens = DataFromSite.imagensPalestras
-       
+
+        //
+        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -64,7 +54,7 @@ class ProgramacaoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
-        self.tableView.reloadData()
+        //self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
