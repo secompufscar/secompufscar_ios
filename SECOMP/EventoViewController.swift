@@ -20,36 +20,17 @@ class EventoViewController: UIViewController {
     
     
     var viasegue: Atividade = Atividade ()
-//        nome_atividade: "",
-//        descricao_atividade: "",
-//        data_inicio_atividade: "",
-//        hora_inicio_atividade: "",
-//        hora_fim_atividade: "",
-//        hora_retorno_atividade: "",
-//        hora_fim_retorno_atividade: "",
-//        local_atividade: "",
-//        ministrante_atividade: "",
-//        foto_atividade: "")
-    //var imagem = UIImage()
     
     @IBOutlet weak var imagePalestrante: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(AtividadeDAO.buscarTodos().count)
         // Do any additional setup after loading the view.
-        
-//        let url = NSURL(string: viasegue.foto_atividade)
-//        
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-//            let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
-//            dispatch_async(dispatch_get_main_queue(), {
-//                self.imagePalestrante.image = UIImage(data: data!)
-//            });
-//        }
-//        print(viasegue.foto_atividade)
-        
-        label.text = viasegue.nome!
+                
+        label.text = viasegue.nome
         
         nomePalestrante.text = viasegue.ministrante
         
@@ -63,6 +44,9 @@ class EventoViewController: UIViewController {
         imagePalestrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
         imagePalestrante.layer.cornerRadius = 10
         imagePalestrante.clipsToBounds = true
+        
+        viasegue.favorito = true
+        AtividadeDAO.salvar()
     }
     
     override func viewWillAppear(animated: Bool) {

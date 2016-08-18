@@ -9,6 +9,8 @@
 import UIKit
 
 class FavoritosTableViewController: UITableViewController {
+    
+    var favoritos = [Atividade]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,8 @@ class FavoritosTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.favoritos = AtividadeDAO.buscarFavoritos()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,15 +38,14 @@ class FavoritosTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return favoritos.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellFavIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellFavIdentifier", forIndexPath: indexPath) as! FavoritosTableViewCell
+        cell.label.text = favoritos[indexPath.row].nome
+        
         return cell
     }
 

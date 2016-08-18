@@ -93,8 +93,8 @@
 		D846CB241D6222CC00532BEF /* Programaçao */ = {
 			isa = PBXGroup;
 			children = (
-				D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */,
 				00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */,
+				D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */,
 				D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */,
 				D846CB311D623B0F00532BEF /* EventoViewController.swift */,
 			);

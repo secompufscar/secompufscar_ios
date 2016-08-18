@@ -92,7 +92,7 @@ class DataFromSite {
                             
                         }
                         
-                        AtividadeDAO.atualizar(self.palestras, fotos: self.imagensPalestras, tipo: "palestra")
+                        AtividadeDAO.atualizarBanco(self.palestras, fotos: self.imagensPalestras, tipo: "palestra")
 
                         
                         if let minicursos = json["minicursos"] as? [[String: String]] {
@@ -107,6 +107,8 @@ class DataFromSite {
                                 self.imagensPalestras.append(UIImage(data: data!)!)
                                 
                             }
+                            
+                            AtividadeDAO.atualizarBanco(self.minicursos, fotos: self.imagensMinicursos, tipo: "minicurso")
                         }
                         
                     } else {

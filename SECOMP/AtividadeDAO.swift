@@ -12,6 +12,9 @@ import CoreData
 
 class AtividadeDAO {
     
+    static var palestras = [Atividade]()
+    static var minicursos = [Atividade]()
+    
     static func inserir(atividade: Atividade) {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -50,14 +53,14 @@ class AtividadeDAO {
         
         do {
             try context.save()
-            print("Alterou o/")
+            print("Salvou")
             
         } catch let erro as NSError {
             print(erro)
         }
     }
     
-    static func atualizar(atividades: [AtividadeAux], fotos: [UIImage], tipo: String) {
+    static func atualizarBanco(atividades: [AtividadeAux], fotos: [UIImage], tipo: String) {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
@@ -109,6 +112,25 @@ class AtividadeDAO {
         }
         
     }
+    
+    static func atualizarDados() {
+        
+        let atividades = self.buscarTodos()
+        
+        self.palestras = []
+        self.minicursos = []
+        
+        for atividade in atividades {
+            if atividade.tipo == "palestra" {
+                self.palestras.append(atividade)
+            }
+            else if atividade.tipo == "minicurso" {
+                self.minicursos.append(atividade)
+            }
+        }
+        
+        print(self.palestras.count)
+    }
 
     
     static func buscarTodos() -> [Atividade] {
@@ -119,7 +141,7 @@ class AtividadeDAO {
         var atividades: [Atividade] = []
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "Atividade")
-        //request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
                 
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]
@@ -141,7 +163,7 @@ class AtividadeDAO {
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "Atividade")
         request.predicate = NSPredicate(format: "favorito == true")
-        //request.sortDescriptors = [NSSortDescriptor(key: "id", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
         
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]

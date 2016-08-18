@@ -10,7 +10,7 @@ import UIKit
 class ProgramacaoTableViewController: UITableViewController {
     
     var atividades = [Atividade]()
-    var imagens = [UIImage]()
+    //var imagens = [UIImage]()
     
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -20,15 +20,14 @@ class ProgramacaoTableViewController: UITableViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            //atividades = DataFromSite.palestras
+            atividades = AtividadeDAO.palestras
             //imagens = DataFromSite.imagensPalestras
 //            for _ in self.atividades {
 //                self.imagens.append(UIImage())
 //            }
             tableView.reloadData()
-//            loadDataFromSite("palestras")
         case 1:
-           // atividades = DataFromSite.minicursos
+           atividades = AtividadeDAO.minicursos
             //imagens = DataFromSite.imagensMinicursos
 //            for _ in self.atividades {
 //                self.imagens.append(UIImage())
@@ -45,16 +44,18 @@ class ProgramacaoTableViewController: UITableViewController {
     }
     
         override func viewWillAppear(animated: Bool) {
+            
         self.segmentedControl.selectedSegmentIndex = 0
-        atividades = AtividadeDAO.buscarTodos()
+        AtividadeDAO.atualizarDados()
+
+        atividades = AtividadeDAO.palestras
+        self.tableView.reloadData()
         //imagens = DataFromSite.imagensPalestras
        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        self.tableView.reloadData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
