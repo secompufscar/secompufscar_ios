@@ -13,6 +13,7 @@
 		3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */; };
 		3F9964951D64F2E70000D4AC /* SobresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964911D64F2E70000D4AC /* SobresViewController.swift */; };
 		3F9964961D64F2E70000D4AC /* SobreUFSCARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964921D64F2E70000D4AC /* SobreUFSCARViewController.swift */; };
+		3FE77BF31D661B9C00F63CAC /* InscrevaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE77BF21D661B9C00F63CAC /* InscrevaseViewController.swift */; };
 		D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */; };
 		D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */; };
 		D83FA4CB1D63DD29006EC8D1 /* AtividadeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */; };
@@ -23,7 +24,6 @@
 		D846CB2C1D622D9300532BEF /* SobreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB2B1D622D9300532BEF /* SobreTableViewController.swift */; };
 		D846CB2E1D622DAF00532BEF /* SobreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB2D1D622DAF00532BEF /* SobreTableViewCell.swift */; };
 		D846CB321D623B0F00532BEF /* EventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB311D623B0F00532BEF /* EventoViewController.swift */; };
-		D846CB361D6264AD00532BEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846CB351D6264AD00532BEF /* HomeViewController.swift */; };
 		D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E0FF51D6122C3007C6849 /* AppDelegate.swift */; };
 		D86E0FFB1D6122C3007C6849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86E0FF91D6122C3007C6849 /* Main.storyboard */; };
 		D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D86E0FFC1D6122C3007C6849 /* SECOMP.xcdatamodeld */; };
@@ -43,6 +43,7 @@
 		3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDevViewController.swift; sourceTree = "<group>"; };
 		3F9964911D64F2E70000D4AC /* SobresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobresViewController.swift; sourceTree = "<group>"; };
 		3F9964921D64F2E70000D4AC /* SobreUFSCARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreUFSCARViewController.swift; sourceTree = "<group>"; };
+		3FE77BF21D661B9C00F63CAC /* InscrevaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscrevaseViewController.swift; sourceTree = "<group>"; };
 		D83FA4C61D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Atividade+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D83FA4C71D63DBFC006EC8D1 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
 		D83FA4CA1D63DD29006EC8D1 /* AtividadeDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeDAO.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		D846CB2B1D622D9300532BEF /* SobreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTableViewController.swift; sourceTree = "<group>"; };
 		D846CB2D1D622DAF00532BEF /* SobreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreTableViewCell.swift; sourceTree = "<group>"; };
 		D846CB311D623B0F00532BEF /* EventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoViewController.swift; sourceTree = "<group>"; };
-		D846CB351D6264AD00532BEF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D86E0FF21D6122C3007C6849 /* SECOMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SECOMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86E0FF51D6122C3007C6849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86E0FFA1D6122C3007C6849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,14 +131,6 @@
 			name = Twitter;
 			sourceTree = "<group>";
 		};
-		D846CB301D622E0800532BEF /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				D846CB351D6264AD00532BEF /* HomeViewController.swift */,
-			);
-			name = Home;
-			sourceTree = "<group>";
-		};
 		D86E0FE91D6122C3007C6849 = {
 			isa = PBXGroup;
 			children = (
@@ -201,11 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */,
-				D846CB301D622E0800532BEF /* Home */,
 				D846CB241D6222CC00532BEF /* Programaçao */,
 				D846CB2F1D622DBD00532BEF /* Twitter */,
 				D846CB271D622CC100532BEF /* Favoritos */,
 				D846CB2A1D622D6700532BEF /* Sobre */,
+				3FE77BF21D661B9C00F63CAC /* InscrevaseViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -314,6 +306,7 @@
 				D846CB231D6222BB00532BEF /* ProgramacaoTableViewCell.swift in Sources */,
 				D846CB2C1D622D9300532BEF /* SobreTableViewController.swift in Sources */,
 				3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */,
+				3FE77BF31D661B9C00F63CAC /* InscrevaseViewController.swift in Sources */,
 				D83FA4CB1D63DD29006EC8D1 /* AtividadeDAO.swift in Sources */,
 				D86E0FFE1D6122C3007C6849 /* SECOMP.xcdatamodeld in Sources */,
 				D83FA4C81D63DBFC006EC8D1 /* Atividade+CoreDataProperties.swift in Sources */,
@@ -325,7 +318,6 @@
 				3F9964961D64F2E70000D4AC /* SobreUFSCARViewController.swift in Sources */,
 				D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */,
 				3F9964951D64F2E70000D4AC /* SobresViewController.swift in Sources */,
-				D846CB361D6264AD00532BEF /* HomeViewController.swift in Sources */,
 				D86E101A1D61360C007C6849 /* TwitterTimelineViewController.swift in Sources */,
 				3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */,
 				D846CB291D622CE600532BEF /* FavoritosTableViewCell.swift in Sources */,
