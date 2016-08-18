@@ -7,51 +7,51 @@
 //
 
 import UIKit
-
-class AtividadeAux {
-    var nome_atividade: String
-    var descricao_atividade: String
-    var data_inicio_atividade: String
-    var hora_inicio_atividade: String
-    var hora_fim_atividade: String
-    var hora_retorno_atividade: String?
-    var hora_fim_retorno_atividade: String?
-    var local_atividade: String
-    var ministrante_atividade: String
-    var foto_atividade: String
-    
-    init(nome_atividade: String, descricao_atividade: String, data_inicio_atividade: String, hora_inicio_atividade: String, hora_fim_atividade: String, hora_retorno_atividade: String?, hora_fim_retorno_atividade: String?, local_atividade: String, ministrante_atividade: String, foto_atividade: String) {
-        self.nome_atividade = nome_atividade
-        self.descricao_atividade = descricao_atividade
-        self.data_inicio_atividade = data_inicio_atividade
-        self.hora_inicio_atividade = hora_inicio_atividade
-        self.hora_fim_atividade = hora_fim_atividade
-        self.hora_retorno_atividade = hora_retorno_atividade
-        self.hora_fim_retorno_atividade = hora_fim_retorno_atividade
-        self.local_atividade = local_atividade
-        self.ministrante_atividade = ministrante_atividade
-        self.foto_atividade = foto_atividade
-    }
-}
-
 class ProgramacaoTableViewController: UITableViewController {
     
+    var atividades = [AtividadeAux]()
     var palestras = [AtividadeAux]()
+    var minicursos = [AtividadeAux]()
+    
+    var imagensPalestras = [UIImage]()
+    var imagensMinicursos = [UIImage]()
+    var imagensWorkshops = [UIImage]()
     var imagens = [UIImage]()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableView.reloadData()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBAction func indexChanged(sender: UISegmentedControl) {
         
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            atividades = palestras
+            imagens = imagensPalestras
+//            for _ in self.atividades {
+//                self.imagens.append(UIImage())
+//            }
+            tableView.reloadData()
+//            loadDataFromSite("palestras")
+        case 1:
+            atividades = minicursos
+            imagens = imagensMinicursos
+//            for _ in self.atividades {
+//                self.imagens.append(UIImage())
+//            }
+            tableView.reloadData()
+//            loadDataFromSite("minicursos")
+        case 2:
+            tableView.reloadData()
+//            loadDataFromSite("palestras")
+        default:
+            break; 
+        }
         
-        let requestURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
-//        let requestURL: NSURL = NSURL(string: "http://localhost:8000/2016/app/")!
+    }
+    
+    func loadDataFromSite() {
+        //        let requestURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
+        let requestURL: NSURL = NSURL(string: "http://localhost:8000/2016/app/")!
         let urlRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -66,23 +66,48 @@ class ProgramacaoTableViewController: UITableViewController {
                 do {
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
                     
-                    if let palestras = json["palestras"] as? [[String: String]] {
-                        print(palestras)
+                    print(json)
+                    print(json as? [[Dictionary<String, String>]])
+                    //                    print(json["atividades"] as? [[[String: String]]])
+                    self.palestras = [AtividadeAux]()
+                    self.minicursos = [AtividadeAux]()
                     
+                    if let palestras = json["palestras"] as? [[String: String]] {
+                        //                        print(palestras)
+                        
                         for palestra in palestras {
-                          
+//                            print(palestra)
+                            
                             self.palestras.append(
                                 AtividadeAux(nome_atividade: palestra["nome_atividade"]!, descricao_atividade: palestra["descricao_atividade"]!, data_inicio_atividade: palestra["data_inicio_atividade"]!, hora_inicio_atividade: palestra["hora_inicio_atividade"]!, hora_fim_atividade: palestra["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: palestra["local_atividade"]!, ministrante_atividade: palestra["ministrante_atividade"]!, foto_atividade: palestra["foto_atividade"]!))
-
+                            
                         }
+                        
+                        if let minicursos = json["minicursos"] as? [[String: String]] {
+                            for minicurso in minicursos {
+//                                print(palestra)
+                                
+                                self.minicursos.append(
+                                    AtividadeAux(nome_atividade: minicurso["nome_atividade"]!, descricao_atividade: minicurso["descricao_atividade"]!, data_inicio_atividade: minicurso["data_inicio_atividade"]!, hora_inicio_atividade: minicurso["hora_inicio_atividade"]!, hora_fim_atividade: minicurso["hora_fim_atividade"]!, hora_retorno_atividade: nil, hora_fim_retorno_atividade: nil, local_atividade: minicurso["local_atividade"]!, ministrante_atividade: minicurso["ministrante_atividade"]!, foto_atividade: minicurso["foto_atividade"]!))
+                                
+                            }
+                        }
+                        
+                        
                         
                         dispatch_async(dispatch_get_main_queue(), {
                             self.tableView.reloadData()
                             
-                            for _ in palestras {
-                                self.imagens.append(UIImage())
+                            for _ in self.palestras {
+                                self.imagensPalestras.append(UIImage())
+                            }
+                            
+                            for _ in self.minicursos {
+                                self.imagensMinicursos.append(UIImage())
                             }
                         });
+                    } else {
+                        print("Não consegui fazer o parsing :(")
                     }
                 } catch {
                     print("Error with Json: \(error)")
@@ -91,6 +116,28 @@ class ProgramacaoTableViewController: UITableViewController {
         }
         
         task.resume()
+        
+    }
+    override func viewWillAppear(animated: Bool) {
+        self.segmentedControl.selectedSegmentIndex = 0
+        
+        loadDataFromSite()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        self.segmentedControl.selectedSegmentIndex = 0
+//        
+        loadDataFromSite()
+//        self.tableView.reloadData()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
         self.tableView.reloadData()
     }
 
@@ -108,33 +155,37 @@ class ProgramacaoTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return palestras.count
+        return atividades.count
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellProgIdentifier", forIndexPath: indexPath) as! ProgramacaoTableViewCell
         
-        cell.label.text = palestras[indexPath.row].nome_atividade
-        cell.horarioLabel.text = palestras[indexPath.row].data_inicio_atividade + " " + palestras[indexPath.row].hora_inicio_atividade
+        cell.label.text = atividades[indexPath.row].nome_atividade
+        cell.horarioLabel.text = atividades[indexPath.row].data_inicio_atividade + " " + atividades[indexPath.row].hora_inicio_atividade
 //        cell.imagemMinistrante.image = imagens[indexPath.row]
         
-        
-        
-        let url = NSURL(string: palestras[indexPath.row].foto_atividade)
+        let url = NSURL(string: atividades[indexPath.row].foto_atividade)
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             let data = NSData(contentsOfURL: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check
             dispatch_async(dispatch_get_main_queue(), {
-                self.imagens[indexPath.row] = UIImage(data: data!)!
-                cell.imagemMinistrante.image = self.imagens[indexPath.row]
-                
-                
+                switch self.segmentedControl.selectedSegmentIndex {
+                case 0:
+                    self.imagensPalestras[indexPath.row] = UIImage(data: data!)!
+                    cell.imagemMinistrante.image = self.imagensPalestras[indexPath.row]
+                case 1:
+//                    self.segmentedControl.selectedSegmentIndex == 1 {
+                    self.imagensMinicursos[indexPath.row] = UIImage(data: data!)!
+                    cell.imagemMinistrante.image = self.imagensMinicursos[indexPath.row]
+                default: break
+                }
+//                cell.imagemMinistrante.image = self.imagens[indexPath.row]
 //                cell.imagemMinistrante.image = UIImage(data: data!)
-//                cell.imagemMinistrante.layer.borderWidth = 0.75
-//                cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
-//                cell.imagemMinistrante.layer.cornerRadius = 5
-//                cell.imagemMinistrante.clipsToBounds = true
+                cell.imagemMinistrante.layer.borderWidth = 0.75
+                cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
+                cell.imagemMinistrante.layer.cornerRadius = 5
+                cell.imagemMinistrante.clipsToBounds = true
             });
         }
 
@@ -186,7 +237,7 @@ class ProgramacaoTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let destination = segue.destinationViewController as? EventoViewController {
                 let path = tableView.indexPathForSelectedRow?.row
-                destination.viasegue = palestras[path!]
+                destination.viasegue = atividades[path!]
                 destination.imagem = imagens[path!]
             }
         }

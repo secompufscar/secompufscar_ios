@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F4F5C21D6539B1004D4BC7 /* AtividadeAux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */; };
 		3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */; };
 		3F9964931D64F2E70000D4AC /* SobreDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */; };
 		3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeAux.swift; sourceTree = "<group>"; };
 		3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
 		3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDCViewController.swift; sourceTree = "<group>"; };
 		3F9964901D64F2E70000D4AC /* SobreDevViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDevViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D846CB201D62228300532BEF /* ProgramacaoTableViewController.swift */,
+				00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */,
 				D846CB221D6222BB00532BEF /* ProgramacaoTableViewCell.swift */,
 				D846CB311D623B0F00532BEF /* EventoViewController.swift */,
 			);
@@ -326,6 +329,7 @@
 				D86E101A1D61360C007C6849 /* TwitterTimelineViewController.swift in Sources */,
 				3F9964941D64F2E70000D4AC /* SobreDevViewController.swift in Sources */,
 				D846CB291D622CE600532BEF /* FavoritosTableViewCell.swift in Sources */,
+				00F4F5C21D6539B1004D4BC7 /* AtividadeAux.swift in Sources */,
 				D846CB2E1D622DAF00532BEF /* SobreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
