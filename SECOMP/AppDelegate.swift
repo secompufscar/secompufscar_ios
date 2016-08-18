@@ -55,7 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Zera a quantidade de vista no Badge do app quando o app é aberto
         application.applicationIconBadgeNumber = 0
-        DataFromSite.load()
+        AtividadeDAO.atualizarDados()
+        //DataFromSite.load()
     }
 
     func applicationWillTerminate(application: UIApplication) {

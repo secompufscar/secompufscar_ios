@@ -49,17 +49,10 @@ class AtividadeAux {
 
 class DataFromSite {
     
-    //static var palestras = [AtividadeAux]()
-    //static var minicursos = [AtividadeAux]()
     static var atividades = [AtividadeAux]()
     
-    //static var imagensPalestras = [UIImage]()
-    //static var imagensMinicursos = [UIImage]()
-    //static var imagensWorkshops = [UIImage]()
-    
-    static func load() {
+    static func load() -> Bool {
         let requestURL = NSURL(string: "https://secompufscar.com.br/2016/app/")!
-        //let requestURL: NSURL = NSURL(string: "http://localhost:8000/2016/app/")!
         let urlRequest = NSMutableURLRequest(URL: requestURL)
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(urlRequest) {
@@ -93,9 +86,6 @@ class DataFromSite {
                             aux.imagem_atividade = UIImage(data: data!)
                             
                             self.atividades.append(aux)
-                            
-                            //self.imagensPalestras.append(UIImage(data: data!)!)
-                            
                         }
                         
                         
@@ -132,6 +122,7 @@ class DataFromSite {
                         }
                         
                         AtividadeDAO.atualizarBanco(self.atividades)
+                        AtividadeDAO.atualizarDados()
                         
                     } else {
                         print("Não consegui fazer o parsing :(")
@@ -143,6 +134,8 @@ class DataFromSite {
         }
         
         task.resume()
+        
+        return true
     }
     
 }

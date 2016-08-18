@@ -133,6 +133,11 @@
                                 <action selector="indexChanged:" destination="JtT-5N-bEZ" eventType="valueChanged" id="obQ-eA-2mN"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hQH-cJ-XPA">
+                            <connections>
+                                <action selector="refresh:" destination="JtT-5N-bEZ" id="IoH-Fw-hyh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segmentedControl" destination="naa-Uh-iTJ" id="lYY-0V-BbV"/>
