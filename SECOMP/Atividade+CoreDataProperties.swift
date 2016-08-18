@@ -2,7 +2,7 @@
 //  Atividade+CoreDataProperties.swift
 //  SECOMP
 //
-//  Created by Student on 8/17/16.
+//  Created by FelipeSampaio on 8/17/16.
 //  Copyright © 2016 secompufscar. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,10 +15,16 @@ import CoreData
 extension Atividade {
 
     @NSManaged var descricao: String?
-    @NSManaged var horario: NSDate?
-    @NSManaged var imagem: NSData?
+    @NSManaged var foto: NSData?
     @NSManaged var local: String?
     @NSManaged var ministrante: String?
     @NSManaged var nome: String?
+    @NSManaged var hora_inicio: String?
+    @NSManaged var hora_fim: String?
+    @NSManaged var hora_retorno: String?
+    @NSManaged var hora_fim_retorno: String?
+    @NSManaged var favorito: NSNumber?
+    @NSManaged var data: String?
+    @NSManaged var tipo: String?
 
 }
