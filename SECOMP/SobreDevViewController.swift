@@ -10,9 +10,26 @@ import UIKit
 
 class SobreDevViewController: UIViewController {
 
+    @IBOutlet weak var fotoAndre: UIImageView!
+    @IBOutlet weak var fotoFelipeQuecole: UIImageView!
+    @IBOutlet weak var fotoFelipeSampaio: UIImageView!
+    @IBOutlet weak var fotoIsadora: UIImageView!
+    @IBOutlet weak var fotoMarcelo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        arrendondarCantosDaImagem(fotoAndre)
+        arrendondarCantosDaImagem(fotoFelipeQuecole)
+        arrendondarCantosDaImagem(fotoFelipeSampaio)
+        arrendondarCantosDaImagem(fotoIsadora)
+        arrendondarCantosDaImagem(fotoMarcelo)
+    }
+    
+    func arrendondarCantosDaImagem(fotoDesenvolvedor: UIImageView!) {
+        fotoDesenvolvedor.layer.borderWidth = 0.75
+        fotoDesenvolvedor.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
+        fotoDesenvolvedor.layer.cornerRadius = 5
+        fotoDesenvolvedor.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {

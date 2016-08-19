@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bDY-N8-ILm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,7 +30,7 @@
             </objects>
             <point key="canvasLocation" x="-2988" y="2066"/>
         </scene>
-        <!--Twitter-->
+        <!--Notícias do Twitter-->
         <scene sceneID="RDn-yx-dIY">
             <objects>
                 <tableViewController id="rJh-Ks-GVq" customClass="TwitterTimelineViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNq-96-fqo" id="syl-Nh-aXT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -53,7 +53,7 @@
                             <outlet property="delegate" destination="rJh-Ks-GVq" id="Rgh-Fw-s6b"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Twitter" id="ZRk-qg-C4L"/>
+                    <navigationItem key="navigationItem" title="Notícias do Twitter" id="ZRk-qg-C4L"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4S-1G-2JU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aAl-0Q-yF8" id="vLn-09-2tX">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlY-ri-R8h">
@@ -160,7 +160,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QMh-SM-KfD" id="chD-Pu-yWG">
-                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="57.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-t8-Lzb">
@@ -258,7 +258,7 @@
                             <constraint firstItem="w5F-iy-DOP" firstAttribute="top" secondItem="1Dv-e7-n0J" secondAttribute="topMargin" id="Yf9-hs-T32"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QAd-nh-axI"/>
+                    <navigationItem key="navigationItem" title="Área do Participante" id="QAd-nh-axI"/>
                     <connections>
                         <outlet property="AreadoParticipante" destination="w5F-iy-DOP" id="PfD-MZ-hdo"/>
                     </connections>
@@ -282,7 +282,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ox8-ME-tpa" id="8W2-E0-y4n">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a SECOMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-se-JAE">
@@ -301,7 +301,7 @@
                                         <rect key="frame" x="0.0" y="128" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLS-ZL-BFR" id="3pt-5v-bVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre o DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-VJ-dCx">
@@ -320,7 +320,7 @@
                                         <rect key="frame" x="0.0" y="192" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cin-8E-Jg1" id="PZP-0j-Geb">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a UFSCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-3L-0c2">
@@ -339,7 +339,7 @@
                                         <rect key="frame" x="0.0" y="256" width="600" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQj-kY-NmB" id="AWt-nU-fDw">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desenvolvedores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-dQ-q5S">
@@ -651,17 +651,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vi_secomp" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-ap-wZN">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-V9-1Qb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6x-V9-1Qb">
                                 <rect key="frame" x="20" y="263" width="560" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">A Semana Acadêmica da Computação da Universidade Federal de São Carlos surgiu da necessidade de se trazer assuntos que fossem de interesse tanto da comunidade acadêmica quanto de entusiastas. Nela, pessoas de diferentes áreas são convidadas a apresentar, discutir e debater experiências e novidades que trarão informação, conhecimento e inovação aos participantes.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A Semana Acadêmica da Computação da Universidade Federal de São Carlos surgiu da necessidade de se trazer assuntos que fossem de interesse tanto da comunidade acadêmica quanto de entusiastas. Nela, pessoas de diferentes áreas são convidadas a apresentar, discutir e debater experiências e novidades que trarão informação, conhecimento e inovação aos participantes.
 
 Desde a sua primeira edição, a SECOMP trabalha para que os assuntos sejam os mais atuais possíveis e que sejam transmitidos da maneira mais dinâmica tentando aproximar o participante de áreas que vão da academia até o mercado de trabalho através de minicursos, workshops, palestras técnicas, empresariais, mesas redondas, feira de recrutamento e muitos outros conteúdos que foram pensados ao longo do tempo em busca de um evento cada vez melhor.
 
 Em prol disso, os estudos são constantes para que o modelo de evento sempre melhore e se torne referência, trazendo cada vez mais experiências únicas a quem nos acompanha e encurtando as relações para que todos os segmentos de público sejam beneficiados.
 
 Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melhorias, por entendermos que você, participante, é a peça fundamental para a nossa evolução!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <attributes>
+                                            <font key="NSFont" size="21" name="SanFranciscoText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" hyphenationFactor="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -723,8 +730,8 @@ Atento à constante evolução na área de computação, o DC-UFSCar tem atuado 
 Texto obtido da página institucional do Departamento de Computação da UFSCar, disponível em www.dc.ufscar.br.
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="17" name="SanFranciscoText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" hyphenationFactor="2" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -774,10 +781,12 @@ Texto obtido da página institucional do Departamento de Computação da UFSCar,
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufscar_aerea" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Wu-Y9M">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-AW-gpQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-AW-gpQ">
                                 <rect key="frame" x="14" y="263" width="566" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Fundada em 1968, a Universidade Federal de São Carlos (UFSCar), única instituição federal de Ensino Superior localizada no interior do Estado de São Paulo, destaca-se pelo alto nível de qualificação de seu corpo docente: 96,1% são doutores ou mestres. Em sua maioria, 98,6% dos professores desenvolvem atividades de ensino, pesquisa e extensão em regime de dedicação exclusiva.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Fundada em 1968, a Universidade Federal de São Carlos (UFSCar), única instituição federal de Ensino Superior localizada no interior do Estado de São Paulo, destaca-se pelo alto nível de qualificação de seu corpo docente: 96,1% são doutores ou mestres. Em sua maioria, 98,6% dos professores desenvolvem atividades de ensino, pesquisa e extensão em regime de dedicação exclusiva.
 
 A Universidade possui quatro campi, sendo que o principal fica em São Carlos, município localizado a 235 km da capital do Estado, e tem 645 hectares de extensão, sendo 196 mil m² de área construída.
 
@@ -788,7 +797,12 @@ Os 48 departamentos acadêmicos da Universidade estão divididos em oito centros
 A UFSCar oferece 62 cursos e um total de 2.807 novas vagas na graduação presencial. São 39 opções de cursos em São Carlos (1.797 vagas), seis em Araras (240 vagas), 14 em Sorocaba (620) e três em Buri (150 vagas).
 
 Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="SanFranciscoText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" hyphenationFactor="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
@@ -830,7 +844,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portal" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-gM-5E4">
                                 <rect key="frame" x="0.0" y="20" width="600" height="218"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="93w-s1-bXp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andre_zanon" translatesAutoresizingMaskIntoConstraints="NO" id="93w-s1-bXp">
                                 <rect key="frame" x="20" y="257" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="43" id="fDj-NZ-eHb"/>
@@ -843,7 +857,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-ZN-EqG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felipe_quecole" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-ZN-EqG">
                                 <rect key="frame" x="20" y="308" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="BgU-v9-1Hq"/>
@@ -856,7 +870,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="32G-JM-We0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="felipe_sampaio" translatesAutoresizingMaskIntoConstraints="NO" id="32G-JM-We0">
                                 <rect key="frame" x="20" y="359" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="ReE-vP-79G"/>
@@ -869,7 +883,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-Rz-Nhg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="isadora_gallerani" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-Rz-Nhg">
                                 <rect key="frame" x="20" y="410" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="43" id="0Ar-l8-pYb"/>
@@ -882,7 +896,7 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secomp-logo-fundobranco-appicon" translatesAutoresizingMaskIntoConstraints="NO" id="p5E-mo-MV6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marcelo_oliveira" translatesAutoresizingMaskIntoConstraints="NO" id="p5E-mo-MV6">
                                 <rect key="frame" x="20" y="461" width="43" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="TKk-sx-C7D"/>
@@ -925,6 +939,13 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Desenvolvedores" id="P4f-uP-D95"/>
+                    <connections>
+                        <outlet property="fotoAndre" destination="93w-s1-bXp" id="fkk-bH-ExD"/>
+                        <outlet property="fotoFelipeQuecole" destination="xsf-ZN-EqG" id="VDk-RK-hEr"/>
+                        <outlet property="fotoFelipeSampaio" destination="32G-JM-We0" id="UcO-TQ-2Sg"/>
+                        <outlet property="fotoIsadora" destination="D7a-Rz-Nhg" id="kir-4K-WLg"/>
+                        <outlet property="fotoMarcelo" destination="p5E-mo-MV6" id="slR-cw-AYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ct2-a8-D0B" sceneMemberID="firstResponder"/>
             </objects>
@@ -936,10 +957,14 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
         <image name="Employee Card-50" width="50" height="50"/>
         <image name="Info-50" width="50" height="50"/>
         <image name="News-50" width="50" height="50"/>
+        <image name="andre_zanon" width="519" height="519"/>
         <image name="david-beckham" width="500" height="500"/>
         <image name="fachada_dc_ufscar" width="2560" height="1122"/>
+        <image name="felipe_quecole" width="557" height="557"/>
+        <image name="felipe_sampaio" width="252" height="252"/>
+        <image name="isadora_gallerani" width="960" height="960"/>
+        <image name="marcelo_oliveira" width="600" height="600"/>
         <image name="portal" width="742" height="334"/>
-        <image name="secomp-logo-fundobranco-appicon" width="1024" height="1024"/>
         <image name="ufscar_aerea" width="2048" height="833"/>
         <image name="vi_secomp" width="2560" height="1921"/>
     </resources>

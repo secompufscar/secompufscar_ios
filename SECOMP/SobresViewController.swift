@@ -13,14 +13,10 @@ class SobresViewController: UIViewController {
     
     @IBOutlet weak var aboutSECOMP: UITextView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         aboutSECOMP.scrollRangeToVisible(NSMakeRange(0, 0))
-
-        
     }
 
     override func didReceiveMemoryWarning() {
