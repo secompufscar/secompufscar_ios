@@ -28,7 +28,11 @@ class EventoViewController: UIViewController {
         viasegue.favorito = viasegue.favorito == true ? false: true
         AtividadeDAO.salvar()
         AtividadeDAO.atualizarDados()
-        sender.image = UIImage(named: "Star Filled-50")
+        if viasegue.favorito == false {
+            sender.image = UIImage(named: "Star-50")
+        } else {
+            sender.image = UIImage(named: "Star Filled-50")
+        }
     }
     
     override func viewDidLoad() {
