@@ -16,7 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.36481511779999998" green="0.36481511779999998" blue="0.36481511779999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.36481511779999998" green="0.36481511779999998" blue="0.36481511779999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="ABT-yy-1T7" kind="relationship" relationship="viewControllers" id="ZwC-kJ-fqn"/>
@@ -59,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="-672" y="198"/>
         </scene>
-        <!--Programacao Table View Controller-->
+        <!--Programação-->
         <scene sceneID="gXX-Yb-PFh">
             <objects>
                 <tableViewController id="JtT-5N-bEZ" customClass="ProgramacaoTableViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,7 +114,7 @@
                                     <outlet property="horarioLabel" destination="40z-Bx-7PS" id="pTh-bh-lpb"/>
                                     <outlet property="imagemMinistrante" destination="ubi-qQ-vnb" id="oIQ-It-QQy"/>
                                     <outlet property="label" destination="DlY-ri-R8h" id="kUb-ZP-J4O"/>
-                                    <segue destination="xdP-fN-2Ea" kind="show" identifier="showDetail" id="7mm-lD-DJw"/>
+                                    <segue destination="xdP-fN-2Ea" kind="show" id="JHA-lA-dB7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -119,8 +123,7 @@
                             <outlet property="delegate" destination="JtT-5N-bEZ" id="ZUi-ar-X9x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DXk-lB-ar0">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Programação" id="DXk-lB-ar0">
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="naa-Uh-iTJ">
                             <rect key="frame" x="176" y="7" width="248" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -129,11 +132,21 @@
                                 <segment title="Minicursos"/>
                                 <segment title="Workshops"/>
                             </segments>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                    <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="indexChanged:" destination="JtT-5N-bEZ" eventType="valueChanged" id="obQ-eA-2mN"/>
                             </connections>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="hQH-cJ-XPA">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                    <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="refresh:" destination="JtT-5N-bEZ" id="IoH-Fw-hyh"/>
                             </connections>
@@ -220,7 +233,7 @@
         <scene sceneID="NTL-Xd-sHT">
             <objects>
                 <navigationController title="Inscreva-se" id="c7V-KL-brU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Inscrição" image="Employee Card-50" id="caE-LW-Ir6"/>
+                    <tabBarItem key="tabBarItem" title="Inscrição" image="Employee Card-50" selectedImage="Employee Card Filled-50" id="caE-LW-Ir6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DGW-Bs-VwB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -278,17 +291,18 @@
                         <sections>
                             <tableViewSection id="iTF-Ey-PjV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" rowHeight="64" id="Ox8-ME-tpa" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" textLabel="NzZ-bF-ZM2" rowHeight="44" style="IBUITableViewCellStyleDefault" id="Ox8-ME-tpa" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ox8-ME-tpa" id="8W2-E0-y4n">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a SECOMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3L-se-JAE">
-                                                    <rect key="frame" x="30" y="21" width="133" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sobre a SECOMP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NzZ-bF-ZM2">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -297,17 +311,18 @@
                                             <segue destination="PUC-Hd-Mg3" kind="show" id="S6S-g6-0PU"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" rowHeight="64" id="rLS-ZL-BFR" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="128" width="600" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" textLabel="41f-Jc-mM1" rowHeight="44" style="IBUITableViewCellStyleDefault" id="rLS-ZL-BFR" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rLS-ZL-BFR" id="3pt-5v-bVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre o DC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-VJ-dCx">
-                                                    <rect key="frame" x="31" y="21" width="88" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sobre o Departamento de Computação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41f-Jc-mM1">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -316,17 +331,18 @@
                                             <segue destination="9Tu-gd-IZE" kind="show" id="rhe-Fy-M0z"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" rowHeight="64" id="cin-8E-Jg1" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="192" width="600" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" textLabel="uNo-aY-tHr" rowHeight="44" style="IBUITableViewCellStyleDefault" id="cin-8E-Jg1" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cin-8E-Jg1" id="PZP-0j-Geb">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre a UFSCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-3L-0c2">
-                                                    <rect key="frame" x="32" y="21" width="123" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sobre a UFSCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uNo-aY-tHr">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -335,17 +351,18 @@
                                             <segue destination="R4A-nt-DFb" kind="show" id="60m-It-TFL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" rowHeight="64" id="qQj-kY-NmB" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="256" width="600" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellSobreIdentifier" textLabel="DlZ-8E-8vC" rowHeight="44" style="IBUITableViewCellStyleDefault" id="qQj-kY-NmB" customClass="SobreTableViewCell" customModule="SECOMP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="196" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qQj-kY-NmB" id="AWt-nU-fDw">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="63.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desenvolvedores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szk-dQ-q5S">
-                                                    <rect key="frame" x="32" y="21" width="132" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Desenvolvedores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DlZ-8E-8vC">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -371,14 +388,19 @@
         <!--Programação-->
         <scene sceneID="YYI-vl-M7J">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABT-yy-1T7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Programação" image="Calendar-50" id="vEO-iJ-IOe"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ABT-yy-1T7" customClass="NavigationViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Programação" image="Calendar-50" selectedImage="Calendar Filled-50" id="vEO-iJ-IOe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XdX-Eo-puO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="JtT-5N-bEZ" kind="relationship" relationship="rootViewController" id="lZj-HQ-HzU"/>
                     </connections>
@@ -390,8 +412,8 @@
         <!--Notícias-->
         <scene sceneID="QQb-Du-L3T">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lmd-zK-5z0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notícias" image="News-50" id="sKs-RQ-4yA"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lmd-zK-5z0" customClass="NavigationViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notícias" image="News-50" selectedImage="News Filled-50" id="sKs-RQ-4yA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nz3-6b-9W2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -406,10 +428,10 @@
             </objects>
             <point key="canvasLocation" x="-1484" y="198"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="OyQ-FY-wDx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf7-ST-alc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf7-ST-alc" customClass="NavigationViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="kc4-dg-N0L"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1al-hc-tON">
@@ -437,24 +459,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-iQ-vHK">
-                                <rect key="frame" x="25" y="272" width="550" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="12:00 - 13:30">
-                                        <attributes>
-                                            <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyx-Ic-fqg">
+                                <rect key="frame" x="0.0" y="64" width="600" height="134"/>
+                                <color key="backgroundColor" red="0.94024226641414144" green="0.94024226641414144" blue="0.94024226641414144" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="UPM-MS-ff7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYE-Y2-cSi">
+                                <rect key="frame" x="0.0" y="197" width="600" height="24"/>
+                                <color key="backgroundColor" red="0.32549019607843138" green="0.71372549019607845" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="kC5-23-LbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="david-beckham" translatesAutoresizingMaskIntoConstraints="NO" id="qQ3-f7-Gz9">
-                                <rect key="frame" x="22" y="72" width="120" height="120"/>
+                                <rect key="frame" x="22" y="72" width="105" height="105"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="2nc-jY-UnK"/>
+                                    <constraint firstAttribute="width" constant="105" id="EUw-r8-zLO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="LsI-tj-qeK"/>
                                     <constraint firstAttribute="width" secondItem="qQ3-f7-Gz9" secondAttribute="height" multiplier="1:1" id="UQm-gL-ROi"/>
-                                    <constraint firstAttribute="height" constant="120" id="b6O-83-CUw"/>
+                                    <constraint firstAttribute="height" constant="105" id="b6O-83-CUw"/>
+                                    <constraint firstAttribute="width" constant="105" id="ycm-i4-2Qb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
@@ -471,51 +504,60 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EUw-r8-zLO"/>
+                                        <exclude reference="LsI-tj-qeK"/>
+                                        <exclude reference="UQm-gL-ROi"/>
+                                        <exclude reference="b6O-83-CUw"/>
+                                    </mask>
+                                </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-Jo-HsD">
-                                <rect key="frame" x="20" y="188" width="550" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criaçao, detalhamento e execucao de projetos de jogo" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-Jo-HsD">
+                                <rect key="frame" x="20" y="225" width="560" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="umn-gj-70q"/>
+                                    <constraint firstAttribute="height" constant="72" id="39K-hl-8LT"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Andre Carlos Ponce de Leon Ferreira de Carvalho" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Qw-btM">
+                                <rect key="frame" x="135" y="104" width="443" height="23"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-iQ-vHK">
+                                <rect key="frame" x="18" y="200" width="560" height="17"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Criaçao, detalhamento e execucao de projetos de jogo">
+                                    <fragment content="12:00 - 13:30">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="SanFranciscoText-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="umn-gj-70q"/>
-                                    </mask>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Qw-btM">
-                                <rect key="frame" x="150" y="104" width="414" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Andre Carlos Ponce de Leon Ferreira de Carvalho">
-                                        <attributes>
-                                            <color key="NSColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-YI-kfg">
-                                <rect key="frame" x="22" y="298" width="556" height="245"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-YI-kfg">
+                                <rect key="frame" x="22" y="296" width="556" height="247"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="276" id="bzN-oD-RRT">
                                         <variation key="widthClass=compact" constant="288"/>
                                     </constraint>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="SanFranciscoText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" hyphenationFactor="1" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                 <variation key="default">
@@ -533,60 +575,87 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tQ6-MA-zJX" firstAttribute="top" secondItem="jaJ-YI-kfg" secondAttribute="bottom" id="130-d7-Rqm"/>
+                            <constraint firstItem="MYE-Y2-cSi" firstAttribute="top" secondItem="eyx-Ic-fqg" secondAttribute="bottom" constant="-1" id="1oQ-wC-QlW"/>
                             <constraint firstItem="qQ3-f7-Gz9" firstAttribute="top" secondItem="lbT-LH-WHi" secondAttribute="bottom" constant="8" id="3Xh-Nd-Iyk"/>
                             <constraint firstItem="gF1-Jo-HsD" firstAttribute="top" secondItem="lbT-LH-WHi" secondAttribute="bottom" constant="121.5" id="5MJ-No-37Z">
                                 <variation key="widthClass=compact" constant="125"/>
                             </constraint>
                             <constraint firstItem="jaJ-YI-kfg" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="leading" id="8Mw-vc-ig9"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="top" secondItem="lbT-LH-WHi" secondAttribute="bottom" constant="40" id="8fq-rI-pho"/>
                             <constraint firstItem="tQ6-MA-zJX" firstAttribute="top" secondItem="jaJ-YI-kfg" secondAttribute="bottom" constant="13" id="AKJ-9f-CzY"/>
+                            <constraint firstItem="eyx-Ic-fqg" firstAttribute="top" secondItem="lbT-LH-WHi" secondAttribute="bottom" id="BFh-xM-HMO"/>
                             <constraint firstItem="qQ3-f7-Gz9" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="2" id="BZc-pw-6gM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FXd-Qw-btM" secondAttribute="trailing" constant="16" id="Fax-fW-5Qr">
+                            <constraint firstItem="eyx-Ic-fqg" firstAttribute="top" secondItem="FXd-Qw-btM" secondAttribute="bottom" constant="-62.5" id="CKv-7T-DSh"/>
+                            <constraint firstItem="jaJ-YI-kfg" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="2" id="DDc-KX-J6c"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="eyx-Ic-fqg" secondAttribute="trailing" constant="-465" id="DIQ-Rt-Tsj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gF1-Jo-HsD" secondAttribute="leading" id="Djr-eV-TEs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gF1-Jo-HsD" secondAttribute="leading" id="EoA-tK-AKL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FXd-Qw-btM" secondAttribute="trailing" constant="2" id="Fax-fW-5Qr">
                                 <variation key="widthClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="FXd-Qw-btM" secondAttribute="trailing" constant="2" id="H2x-wZ-IS8"/>
                             <constraint firstItem="qQ3-f7-Gz9" firstAttribute="centerX" secondItem="qgE-LI-08c" secondAttribute="centerX" constant="-228" id="LTf-G8-IYa"/>
-                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="top" secondItem="qgE-LI-08c" secondAttribute="top" constant="272" id="M89-Xm-CUr">
-                                <variation key="widthClass=compact" constant="249"/>
-                            </constraint>
-                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="5" id="Mvg-ZP-K5O"/>
-                            <constraint firstItem="jaJ-YI-kfg" firstAttribute="centerX" secondItem="JiZ-iQ-vHK" secondAttribute="centerX" id="QmG-Ng-b9E"/>
-                            <constraint firstItem="FXd-Qw-btM" firstAttribute="centerX" secondItem="qgE-LI-08c" secondAttribute="centerX" constant="57" id="RZa-Qb-p64">
-                                <variation key="widthClass=compact" constant="63"/>
-                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="jaJ-YI-kfg" secondAttribute="trailing" constant="2" id="M1k-Gz-a3f"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="trailing" constant="8" id="MHw-wU-vFH"/>
+                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="-2" id="Mvg-ZP-K5O"/>
+                            <constraint firstItem="jaJ-YI-kfg" firstAttribute="centerX" secondItem="JiZ-iQ-vHK" secondAttribute="centerX" constant="2" id="QmG-Ng-b9E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gF1-Jo-HsD" secondAttribute="trailing" constant="10" id="S3v-Ig-l6c"/>
-                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="centerX" secondItem="qgE-LI-08c" secondAttribute="centerX" id="Uqb-El-awq"/>
-                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="top" secondItem="gF1-Jo-HsD" secondAttribute="bottom" constant="12" id="YRI-hh-BsO">
-                                <variation key="widthClass=compact" constant="8"/>
-                            </constraint>
+                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="centerY" secondItem="MYE-Y2-cSi" secondAttribute="centerY" id="SMg-RP-q3n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gF1-Jo-HsD" secondAttribute="trailing" id="Sw9-dm-ka9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eyx-Ic-fqg" secondAttribute="trailing" constant="-20" id="UBa-hs-2Tx"/>
+                            <constraint firstItem="JiZ-iQ-vHK" firstAttribute="centerX" secondItem="qgE-LI-08c" secondAttribute="centerX" constant="-2" id="Uqb-El-awq"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="trailing" constant="8" id="Xy7-sU-WL1"/>
                             <constraint firstItem="gF1-Jo-HsD" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" id="afR-zp-Fqz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JiZ-iQ-vHK" secondAttribute="trailing" constant="5" id="cOh-I1-z7I"/>
+                            <constraint firstItem="eyx-Ic-fqg" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="trailing" constant="-127" id="eqJ-TM-X0a"/>
+                            <constraint firstItem="gF1-Jo-HsD" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="trailing" constant="-122" id="fR0-11-rNQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gF1-Jo-HsD" secondAttribute="trailing" id="ft2-3i-OVp"/>
+                            <constraint firstItem="MYE-Y2-cSi" firstAttribute="leading" secondItem="eyx-Ic-fqg" secondAttribute="leading" id="gtU-WT-rxp"/>
+                            <constraint firstItem="tQ6-MA-zJX" firstAttribute="top" secondItem="gF1-Jo-HsD" secondAttribute="bottom" constant="259" id="hng-aF-Uh6"/>
+                            <constraint firstItem="eyx-Ic-fqg" firstAttribute="top" secondItem="qQ3-f7-Gz9" secondAttribute="bottom" constant="-113" id="ht6-0h-P8g"/>
                             <constraint firstItem="JiZ-iQ-vHK" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="5" id="la0-cR-oWb"/>
-                            <constraint firstItem="gF1-Jo-HsD" firstAttribute="top" secondItem="FXd-Qw-btM" secondAttribute="bottom" constant="65" id="u6h-eU-b9W">
-                                <variation key="widthClass=compact" constant="34.5"/>
-                            </constraint>
-                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="130" id="wNU-zG-Rx3">
+                            <constraint firstItem="gF1-Jo-HsD" firstAttribute="leading" secondItem="MYE-Y2-cSi" secondAttribute="trailing" constant="-580" id="pJW-cZ-33e"/>
+                            <constraint firstItem="jaJ-YI-kfg" firstAttribute="leading" secondItem="gF1-Jo-HsD" secondAttribute="trailing" constant="-558" id="pqf-RU-YfN"/>
+                            <constraint firstItem="MYE-Y2-cSi" firstAttribute="trailing" secondItem="eyx-Ic-fqg" secondAttribute="trailing" id="rvY-iN-waX"/>
+                            <constraint firstItem="eyx-Ic-fqg" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="-20" id="uUh-TS-1Kn"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="qQ3-f7-Gz9" secondAttribute="trailing" constant="8" id="upT-TG-F4i"/>
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="leading" secondItem="qgE-LI-08c" secondAttribute="leadingMargin" constant="115" id="wNU-zG-Rx3">
                                 <variation key="widthClass=compact" constant="136"/>
                             </constraint>
-                            <constraint firstItem="jaJ-YI-kfg" firstAttribute="top" secondItem="JiZ-iQ-vHK" secondAttribute="bottom" constant="7" id="xJf-mK-iEd">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="FXd-Qw-btM" firstAttribute="top" secondItem="qQ3-f7-Gz9" secondAttribute="bottom" constant="-88" id="z9i-bE-jlu">
+                            <constraint firstItem="FXd-Qw-btM" firstAttribute="top" secondItem="qQ3-f7-Gz9" secondAttribute="bottom" constant="-73" id="z9i-bE-jlu">
                                 <variation key="widthClass=compact" constant="-81"/>
                             </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="CKv-7T-DSh"/>
+                                <exclude reference="3Xh-Nd-Iyk"/>
+                                <exclude reference="BZc-pw-6gM"/>
                                 <exclude reference="LTf-G8-IYa"/>
-                                <exclude reference="5MJ-No-37Z"/>
+                                <exclude reference="DIQ-Rt-Tsj"/>
+                                <exclude reference="Fax-fW-5Qr"/>
+                                <exclude reference="Xy7-sU-WL1"/>
+                                <exclude reference="upT-TG-F4i"/>
+                                <exclude reference="wNU-zG-Rx3"/>
+                                <exclude reference="z9i-bE-jlu"/>
                                 <exclude reference="cOh-I1-z7I"/>
                                 <exclude reference="la0-cR-oWb"/>
+                                <exclude reference="5MJ-No-37Z"/>
+                                <exclude reference="Djr-eV-TEs"/>
+                                <exclude reference="S3v-Ig-l6c"/>
+                                <exclude reference="Sw9-dm-ka9"/>
+                                <exclude reference="afR-zp-Fqz"/>
+                                <exclude reference="fR0-11-rNQ"/>
+                                <exclude reference="pJW-cZ-33e"/>
+                                <exclude reference="8Mw-vc-ig9"/>
                                 <exclude reference="130-d7-Rqm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="5MJ-No-37Z"/>
                                 <include reference="cOh-I1-z7I"/>
                                 <include reference="la0-cR-oWb"/>
+                                <include reference="5MJ-No-37Z"/>
                                 <include reference="130-d7-Rqm"/>
                                 <exclude reference="AKJ-9f-CzY"/>
                             </mask>
@@ -595,13 +664,29 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detalhes" id="aNw-pc-ula">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="bgO-l7-pHK"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RLt-ka-hGA">
+                        <barButtonItem key="rightBarButtonItem" image="Star-50" id="RLt-ka-hGA">
+                            <color key="tintColor" red="0.41258852369999999" green="0.79738794189999995" blue="0.4493119565" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                    <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="marcarFavorito:" destination="xdP-fN-2Ea" id="iEb-wg-NVv"/>
                             </connections>
                         </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" red="0.30868205428123474" green="0.72008597850799561" blue="0.21685144305229187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="botaoMarcarFavorito" destination="RLt-ka-hGA" id="lFw-UC-XpE"/>
                         <outlet property="imagePalestrante" destination="qQ3-f7-Gz9" id="Iki-PO-V9a"/>
@@ -618,8 +703,8 @@
         <!--Sobre-->
         <scene sceneID="HtN-IM-N7d">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d9n-sW-drA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sobre" image="Info-50" id="brP-PA-XJg">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d9n-sW-drA" customClass="NavigationViewController" customModule="SECOMP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sobre" image="Info-50" selectedImage="Info Filled-50" id="brP-PA-XJg">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -664,7 +749,7 @@ Em prol disso, os estudos são constantes para que o modelo de evento sempre mel
 
 Convidamos vocês a acompanhar nosso crescimento e inclusive a nos sugerir melhorias, por entendermos que você, participante, é a peça fundamental para a nossa evolução!</string>
                                         <attributes>
-                                            <font key="NSFont" size="21" name="SanFranciscoText-Regular"/>
+                                            <font key="NSFont" size="17" name="SanFranciscoText-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" hyphenationFactor="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -953,10 +1038,15 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
         </scene>
     </scenes>
     <resources>
+        <image name="Calendar Filled-50" width="50" height="50"/>
         <image name="Calendar-50" width="50" height="50"/>
+        <image name="Employee Card Filled-50" width="50" height="50"/>
         <image name="Employee Card-50" width="50" height="50"/>
+        <image name="Info Filled-50" width="50" height="50"/>
         <image name="Info-50" width="50" height="50"/>
+        <image name="News Filled-50" width="50" height="50"/>
         <image name="News-50" width="50" height="50"/>
+        <image name="Star-50" width="50" height="50"/>
         <image name="andre_zanon" width="519" height="519"/>
         <image name="david-beckham" width="500" height="500"/>
         <image name="fachada_dc_ufscar" width="2560" height="1122"/>
@@ -969,6 +1059,6 @@ Texto obtido da página institucional da UFSCar, disponível em www.ufscar.br.</
         <image name="vi_secomp" width="2560" height="1921"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="26F-qU-biG"/>
+        <segue reference="JHA-lA-dB7"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009069A71D66B0EA0006DFF5 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009069A61D66B0EA0006DFF5 /* NavigationViewController.swift */; };
 		00F4F5C21D6539B1004D4BC7 /* AtividadeAux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */; };
 		3F8A1D3F1D6386A200C83E27 /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */; };
 		3F9964931D64F2E70000D4AC /* SobreDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009069A61D66B0EA0006DFF5 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		00F4F5C11D6539B1004D4BC7 /* AtividadeAux.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeAux.swift; sourceTree = "<group>"; };
 		3F8A1D3E1D6386A200C83E27 /* notificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
 		3F99648F1D64F2E70000D4AC /* SobreDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreDCViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				D86E0FF91D6122C3007C6849 /* Main.storyboard */,
+				009069A61D66B0EA0006DFF5 /* NavigationViewController.swift */,
 				D86E10011D6122C3007C6849 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -315,6 +318,7 @@
 				D86E0FF61D6122C3007C6849 /* AppDelegate.swift in Sources */,
 				D83FA4C91D63DBFC006EC8D1 /* Atividade.swift in Sources */,
 				D846CB211D62228300532BEF /* ProgramacaoTableViewController.swift in Sources */,
+				009069A71D66B0EA0006DFF5 /* NavigationViewController.swift in Sources */,
 				3F9964961D64F2E70000D4AC /* SobreUFSCARViewController.swift in Sources */,
 				D846CB261D622CBB00532BEF /* FavoritosTableViewController.swift in Sources */,
 				3F9964951D64F2E70000D4AC /* SobresViewController.swift in Sources */,
