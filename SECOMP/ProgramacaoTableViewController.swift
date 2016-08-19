@@ -78,7 +78,7 @@ class ProgramacaoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellProgIdentifier", forIndexPath: indexPath) as! ProgramacaoTableViewCell
         
         cell.label.text = atividades[indexPath.row].nome
-        cell.horarioLabel.text = atividades[indexPath.row].data! + " " + atividades[indexPath.row].hora_inicio!
+        cell.horarioLabel.text = atividades[indexPath.row].data! + ", " + atividades[indexPath.row].hora_inicio!
         cell.imagemMinistrante.image = UIImage(data: atividades[indexPath.row].foto!)
         cell.imagemMinistrante.layer.borderWidth = 0.75
         cell.imagemMinistrante.layer.borderColor = UIColor(colorLiteralRed: 0.9607843, green: 0.9607843, blue: 0.9607843, alpha: 1).CGColor
@@ -131,11 +131,11 @@ class ProgramacaoTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "showDetail" {
+//        if segue.identifier == "showDetail" {
             if let destination = segue.destinationViewController as? EventoViewController {
                 let path = tableView.indexPathForSelectedRow?.row
                 destination.viasegue = atividades[path!]
-            }
+//            }
         }
     }
 }
