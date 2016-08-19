@@ -141,7 +141,7 @@ class AtividadeDAO {
         var atividades: [Atividade] = []
         
         let request: NSFetchRequest = NSFetchRequest(entityName: "Atividade")
-        request.sortDescriptors = [NSSortDescriptor(key: "nome", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "data", ascending: true), NSSortDescriptor(key: "hora_inicio", ascending: true)]
                 
         do {
             atividades = try context.executeFetchRequest(request) as! [Atividade]
