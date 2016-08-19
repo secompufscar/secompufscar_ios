@@ -25,9 +25,10 @@ class EventoViewController: UIViewController {
     @IBOutlet weak var botaoMarcarFavorito: UIBarButtonItem!
     
     @IBAction func marcarFavorito(sender: UIBarButtonItem) {
-        viasegue.favorito = true
+        viasegue.favorito = viasegue.favorito == true ? false: true
         AtividadeDAO.salvar()
         AtividadeDAO.atualizarDados()
+        sender.image = UIImage(named: "Star Filled-50")
     }
     
     override func viewDidLoad() {
@@ -35,12 +36,18 @@ class EventoViewController: UIViewController {
         
         print(AtividadeDAO.buscarTodos().count)
         // Do any additional setup after loading the view.
+        
+        if viasegue.favorito == false {
+            botaoMarcarFavorito.image = UIImage(named: "Star-50")
+        } else {
+            botaoMarcarFavorito.image = UIImage(named: "Star Filled-50")
+        }
                 
         label.text = viasegue.nome
         
         nomePalestrante.text = viasegue.ministrante
         
-        labelHora.text = viasegue.data! + " - " + viasegue.hora_inicio!
+        labelHora.text = viasegue.local! + ", " + viasegue.data! + " - " + viasegue.hora_inicio!
         
         textDescricao.text = viasegue.descricao
         textDescricao.scrollRangeToVisible(NSMakeRange(0, 0))
@@ -58,6 +65,7 @@ class EventoViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         //depois que apareceu, o que acontece
+        textDescricao.scrollRangeToVisible(NSMakeRange(0, 0))
     }
     
     override func didReceiveMemoryWarning() {
